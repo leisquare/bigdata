@@ -7,11 +7,10 @@ public class Ex09_dowhile {
 		Scanner scanner = new Scanner(System.in);
 		int num;
 		do {
-			// »ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·Â¹ÞÀº ¼ö¸¦ num¿¡ ÇÒ´ç
-			System.out.print("Â¦¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.: ");
+			// ï¿½ï¿½ï¿½ï¿½Ú·Îºï¿½ï¿½ï¿½ ï¿½Ô·Â¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ numï¿½ï¿½ ï¿½Ò´ï¿½
+			System.out.print("Â¦ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.: ");
 			num = scanner.nextInt();
-		} while ( /* numÀÌ È¦¼ö³Ä? */ num % 2 == 1||num%2==-1);
-		System.out.println("ÀÔ·ÂÇÏ½Å Â¦¼ö´Â" + num);
+		} while ( /* numï¿½ï¿½ È¦ï¿½ï¿½ï¿½ï¿½? */ num % 2 == 1 || num % 2 == -1);
+		System.out.println("ï¿½Ô·ï¿½ï¿½Ï½ï¿½ Â¦ï¿½ï¿½ï¿½ï¿½" + num);
 	}
-
 }

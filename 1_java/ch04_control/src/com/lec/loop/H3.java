@@ -8,7 +8,7 @@ public class H3 {
 		while (true) {
 			System.out.println("가위(-),바위(1),보(2)중 하나를 선택:");
 			int you = scanner.nextInt();
-			if (you==0) {
+			if (you == 0) {
 				System.out.println("가위!");
 			} else if (you == 1) {
 				System.out.println("바위!");
@@ -20,10 +20,9 @@ public class H3 {
 			} else {
 				System.out.println("떼끼");
 			}
-			
-	
+
 			// 컴퓨터
-			int computer = (int) (Math.random() * 3); 
+			int computer = (int) (Math.random() * 3);
 			if (computer == 0) {
 				System.out.println("가위!");
 			} else if (computer == 1) {
@@ -34,12 +33,12 @@ public class H3 {
 				System.out.println("떼끼");
 			}
 			// 승패판정
-				if((you+2)%3==computer){
-					System.out.println(("you win"));
-					}else if ((you+2)%3<computer){
-					System.out.println("draw");
-					}else {
-					System.out.println("you lose");
+			if ((you + 2) % 3 == computer) {
+				System.out.println(("you win"));
+			} else if ((you + 2) % 3 < computer) {
+				System.out.println("draw");
+			} else {
+				System.out.println("you lose");
 			}
 		}
 		scanner.close();
