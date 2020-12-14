@@ -2,7 +2,7 @@ package Strategy3.Modulalization;
 
 import Strategy3.component.*;
 
-public class Lecturer extends Person1 {
+public class Lecturer extends Person1 {	
 	
 	private String ban;
 	public Lecturer(String id, String name, String ban) {
