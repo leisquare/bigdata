@@ -12,7 +12,7 @@ public class Ex03_quiz {
 		System.out.println("번호를 입력하세요.");
 		Scanner sc = new Scanner(System.in);
 		String num = sc.next();
-		System.out.println("입력한 전화번호는"+);
+		System.out.println("입력한 전화번호는");
 		
 				
 				

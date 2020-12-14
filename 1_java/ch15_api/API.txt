@@ -1,0 +1,11 @@
+
+[15] API-I
+1. JDK 라이브러리(자바 표준 라이브러리): JDK 안에 포함되어있다. 자바 실행시 자동으로 읽어들임
+2. JAVA 필수 API
+3. 문자열에 관련된 대표적 클래스: String 
+String은 객체 데이터지만 기초데이터처럼 사용 가능. 그러나 String은 메모리를 과소비한다(그래서 StringBuffer나 StringBuilderr가 등장.)
+3-1. StringTokenizer : 스페이스를 기준으로 문자열을 분할해줌.
+4. 날짜 API (Calendar, Gregorian Calendar)
+Calendar은 싱글톤 클래스, Gregorian Calendar은 일반 클래스.
+Calendar calendar = Calendar.getInstance();
+월은 0월~11월로 세기 때문에 숫자를 후에 조정해서 맞춰줄 것

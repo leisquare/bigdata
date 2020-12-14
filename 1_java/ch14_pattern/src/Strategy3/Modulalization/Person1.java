@@ -7,13 +7,12 @@ public class Person1 {
 	private GetImpl get;
 	private JobImpl job;
 
-	private Str
-	ing id;
+	String id;
 	private String name;
 
 	public Person1(String id, String name) {
 	this.id = id;
-	this. name = name;
+	this.name = name;
 	}
 
 	public void print() {
