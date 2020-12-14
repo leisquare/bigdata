@@ -1,3 +1,4 @@
+//ì•„ëž˜ì˜ ì½”ë“œëŠ” ì–´ë””ê°€ í‹€ë ¸ì„ê¹Œ?
 //package com.lec.condition;
 //public class Q2 {
 //	    public static void main(String[] args) {
@@ -12,20 +13,20 @@
 //	    }
 //	}
 
-
-//ºí·° ³»¿¡¼­ º¯¼ö¸¦ ¼±¾ðÇÏ¸é ºí·° ³»¿¡¼­¸¸ »ç¿ë °¡´ÉÇÑ º¯¼ö°¡ µÊ. ±×·¡¼­ ¿À·ù°¡ ³­´Ù.
+//ë¸”ëŸ­ ë‚´ì—ì„œ ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ë©´ ë¸”ëŸ­ ë‚´ì—ì„œë§Œ ì‚¬ìš© ê°€ëŠ¥í•œ ë³€ìˆ˜ê°€ ë¨. ê·¸ëž˜ì„œ ì˜¤ë¥˜ê°€ ë‚œë‹¤.
 
 package com.lec.condition;
+
 public class Q2 {
-	    public static void main(String[] args) {
+	public static void main(String[] args) {
 		int num1 = 27;
 		int num2 = 32;
 		int max;
-		if(num1>num2){
+		if (num1 > num2) {
 			max = num1;
 		} else {
 			max = num2;
 		}
 		System.out.println(max);
-	    }
+	}
 }

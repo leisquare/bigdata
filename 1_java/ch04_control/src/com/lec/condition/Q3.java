@@ -3,41 +3,41 @@ package com.lec.condition;
 import java.util.Random;
 import java.util.Scanner;
 
-//»ç¿ëÀÚ·ÎºÎÅÍ °¡À§(0)¹ÙÀ§(1)º¸(2)Áß ÀÔ·Â¹Ş°í, ÄÄÇ»ÅÍµµ ÇÏ³ª¸¦ ¼±ÅÃÇØ ½ÂÀÚ¸¦ Ãâ·Â
+//ì‚¬ìš©ìë¡œë¶€í„° ê°€ìœ„(0)ë°”ìœ„(1)ë³´(2)ì¤‘ ì…ë ¥ë°›ê³ , ì»´í“¨í„°ë„ í•˜ë‚˜ë¥¼ ì„ íƒí•´ ìŠ¹ìë¥¼ ì¶œë ¥
 public class Q3 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("°¡À§(-),¹ÙÀ§(1),º¸(2)Áß ÇÏ³ª¸¦ ¼±ÅÃ:");
+		System.out.println("ê°€ìœ„(-),ë°”ìœ„(1),ë³´(2)ì¤‘ í•˜ë‚˜ë¥¼ ì„ íƒ:");
 		int you = scanner.nextInt();
-		if(you == 0) {
-			System.out.println("°¡À§!");
-		}else if (you==1) {
-			System.out.println("¹ÙÀ§!");
-		}else if(you==2) {
-			System.out.println("º¸!");
-		}else {
-			System.out.println("¶¼³¢");
-		System.exit(0);
+		if (you == 0) {
+			System.out.println("ê°€ìœ„!");
+		} else if (you == 1) {
+			System.out.println("ë°”ìœ„!");
+		} else if (you == 2) {
+			System.out.println("ë³´!");
+		} else {
+			System.out.println("ë–¼ë¼");
+			System.exit(0);
 		}
 		scanner.close();
-//ÄÄÇ»ÅÍ
-		int computer= (int)(Math.random()*3); //math randomÀº 0~1±îÁö.
-		if(computer == 0) {
-			System.out.println("°¡À§!");
-		}else if (computer ==1) {
-			System.out.println("¹ÙÀ§!");
-		}else if(computer ==2) {
-			System.out.println("º¸!");
-		}else {
-			System.out.println("¶¼³¢");
+//ì»´í“¨í„°
+		int computer = (int) (Math.random() * 3); // math randomì€ 0~1ê¹Œì§€.
+		if (computer == 0) {
+			System.out.println("ê°€ìœ„!");
+		} else if (computer == 1) {
+			System.out.println("ë°”ìœ„!");
+		} else if (computer == 2) {
+			System.out.println("ë³´!");
+		} else {
+			System.out.println("ë–¼ë¼");
 		}
-//½ÂÆĞÆÇÁ¤
-		if((you+2)%3==computer){
+//ìŠ¹íŒ¨íŒì •
+		if ((you + 2) % 3 == computer) {
 			System.out.println(("you win"));
-		}else if ((you+2)%3<computer){
+		} else if ((you + 2) % 3 < computer) {
 			System.out.println("draw");
-		}else {
+		} else {
 			System.out.println("you lose");
 		}
-	}//mainÇÔ¼ö
-}//class
+	}// mainí•¨ìˆ˜
+}// class

@@ -1,20 +1,20 @@
 package com.lec.loop;
 
-//1~10 ´©Àû°ö
+//1~10 ëˆ„ì ê³±
 public class Q1 {
 	public static void main(String[] args) {
 		int tot = 1;
 		for (int i = 1; i < 11; i++) {
-			// totº¯¼ö¿¡ i°ª ´©Àû
+			// totë³€ìˆ˜ì— iê°’ ëˆ„ì 
 			tot = tot * i;
 			if (i != 10) {
 				System.out.print(i + "*");
 			} else {
 				System.out.print(i + "=");
-			} // if´İ
-		} // for´İ
+			} // ifë‹«
+		} // forë‹«
 		System.out.println(tot);
-	}// main´İ
+	}// mainë‹«
 }
 
-//tot *= i; 
+//tot *= i;

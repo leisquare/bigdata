@@ -1,16 +1,18 @@
 package com.lec.condition;
+
 import java.util.Scanner;
+
 public class Ex03_if {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° ¼ö´Â?");
+		System.out.print("ì²«ë²ˆì§¸ ìˆ˜ëŠ”?");
 		int num1 = scanner.nextInt();
-		System.out.print("µÎ¹øÂ° ¼ö´Â?");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ˜ëŠ”?");
 		int num2 = scanner.nextInt();
-		if(num1>num2) {
-			System.out.println("ÀÔ·ÂÇÏ½Å °ªµéÀÇ ÃÖ´ë°ªÀº"+num1);
-		}else {
-			System.out.println("ÀÔ·ÂÇÏ½Å °ªµéÀÇ ÃÖ´ë°ªÀº"+num2);
+		if (num1 > num2) {
+			System.out.println("ì…ë ¥í•˜ì‹  ê°’ë“¤ì˜ ìµœëŒ€ê°’ì€" + num1);
+		} else {
+			System.out.println("ì…ë ¥í•˜ì‹  ê°’ë“¤ì˜ ìµœëŒ€ê°’ì€" + num2);
 		}
 	}
 }

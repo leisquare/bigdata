@@ -5,30 +5,30 @@ import java.util.Scanner;
 public class Ex10_dowhile2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int lotto = (int) (Math.random() * 45) + 1; // ÄÄÇ»ÅÍ ³­¼ö
-		int su; // »ç¿ëÀÚ¿¡°Ô ÀÔ·Â¹ŞÀº ¼ö¸¦ ÀúÀåÇÏ´Â º¯¼ö
+		int lotto = (int) (Math.random() * 45) + 1; // ì»´í“¨í„° ë‚œìˆ˜
+		int su; // ì‚¬ìš©ìì—ê²Œ ì…ë ¥ë°›ì€ ìˆ˜ë¥¼ ì €ì¥í•˜ëŠ” ë³€ìˆ˜
 		int min = 1;
 		int max = 45;
 		System.out.println(lotto);
 		do {
-			System.out.printf("%d~%d »çÀÌÀÇ ·Î¶Ç ¹øÈ£ ÇÑ°³¸¦ ¸ÂÃçº¸¼¼¿ä", min, max);
+			System.out.printf("%d~%d ì‚¬ì´ì˜ ë¡œë˜ ë²ˆí˜¸ í•œê°œë¥¼ ë§ì¶°ë³´ì„¸ìš”", min, max);
 			su = scanner.nextInt();
 			if (su > lotto) {
-				System.out.println(su + "º¸´Ù ÀÛÀº ¼ö¸¦ µµÀüÇÏ¼¼¿ä");
+				System.out.println(su + "ë³´ë‹¤ ì‘ì€ ìˆ˜ë¥¼ ë„ì „í•˜ì„¸ìš”");
 				max = su - 1;
 			} else if (su < lotto) {
-				System.out.println(su + "º¸´Ù Å« ¼ö¸¦ µµÀüÇÏ¼¼¿ä");
+				System.out.println(su + "ë³´ë‹¤ í° ìˆ˜ë¥¼ ë„ì „í•˜ì„¸ìš”");
 				min = su + 1;
 			}
 		} while (su != lotto);
-		System.out.println("ÃàÇÏÇÕ´Ï´Ù!");
+		System.out.println("ì¶•í•˜í•©ë‹ˆë‹¤!");
 
 		scanner.close();
 	}
 
 }
 
-//System.out.println(Math.random()); //0ÀÌ»ó 1¹Ì¸¸ ³­¼ö ½Ç¼ö
-//System.out.println(Math.random()*45); //0ÀÌ»ó 45¹Ì¸¸ ³­¼ö ½Ç¼ö
-//System.out.println((int)(Math.random())*45); //0~44 ³­¼ö Á¤¼ö
-//System.out.println((int)(Math.random())*45+1); //1~45 ³­¼ö Á¤¼ö
+//System.out.println(Math.random()); //0ì´ìƒ 1ë¯¸ë§Œ ë‚œìˆ˜ ì‹¤ìˆ˜
+//System.out.println(Math.random()*45); //0ì´ìƒ 45ë¯¸ë§Œ ë‚œìˆ˜ ì‹¤ìˆ˜
+//System.out.println((int)(Math.random())*45); //0~44 ë‚œìˆ˜ ì •ìˆ˜
+//System.out.println((int)(Math.random())*45+1); //1~45 ë‚œìˆ˜ ì •ìˆ˜

@@ -2,15 +2,15 @@ package com.lec.condition;
 
 public class Ex01_if {
 	public static void main(String[] args) {
-		int i=10, j=20, h=30;
-		if(i+j == h) {
-			System.out.println("i+j´Â hÀÔ´Ï´Ù.");
-			System.out.println("±×·¯´Ï °°´Ù");
-		} //µÑ ´Ù ½ÇÇà½ÃÅ°·Á¸é ½ÇÇà½ÃÅ³ Á¶°Ç µÑ ´Ù Áß°ýÈ£¾È¿¡ ³Ö±â
-		if(i>j) {
-			System.out.println("i>jÀÔ´Ï´Ù");
-		}else {
-			System.out.println("i>j°¡ ¾Æ´Õ´Ï´Ù");
+		int i = 10, j = 20, h = 30;
+		if (i + j == h) {
+			System.out.println("i+jëŠ” hìž…ë‹ˆë‹¤.");
+			System.out.println("ê·¸ëŸ¬ë‹ˆ ê°™ë‹¤");
+		} // ë‘˜ ë‹¤ ì‹¤í–‰ì‹œí‚¤ë ¤ë©´ ì‹¤í–‰ì‹œí‚¬ ì¡°ê±´ ë‘˜ ë‹¤ ì¤‘ê´„í˜¸ì•ˆì— ë„£ê¸°
+		if (i > j) {
+			System.out.println("i>jìž…ë‹ˆë‹¤");
+		} else {
+			System.out.println("i>jê°€ ì•„ë‹™ë‹ˆë‹¤");
 		}
 	}
 }

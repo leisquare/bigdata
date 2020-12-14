@@ -3,61 +3,62 @@
 //public class Q6 {
 //	public static void main(String[] args) {
 //		Scanner month = new Scanner(System.in);
-//		System.out.print("¿ù:");
+//		System.out.print("ì›”:");
 //		int b=month.nextInt();
 //		
 //		switch (b){
 //		case 1:
-//			System.out.println("°Ü¿ï");break;
+//			System.out.println("ê²¨ìš¸");break;
 //		case 2:
-//			System.out.println("º½");break;
+//			System.out.println("ë´„");break;
 //		case 3:
-//			System.out.println("º½");break;
+//			System.out.println("ë´„");break;
 //		case 4:
-//			System.out.println("º½");break;
+//			System.out.println("ë´„");break;
 //		case 5:
-//			System.out.println("¿©¸§");break;
+//			System.out.println("ì—¬ë¦„");break;
 //		case 6:
-//			System.out.println("¿©¸§");break;
+//			System.out.println("ì—¬ë¦„");break;
 //		case 7:
-//			System.out.println("¿©¸§");break;
+//			System.out.println("ì—¬ë¦„");break;
 //		case 8:
-//			System.out.println("°¡À»");break;
+//			System.out.println("ê°€ì„");break;
 //		case 9:
-//			System.out.println("°¡À»");break;
+//			System.out.println("ê°€ì„");break;
 //		case 10:
-//			System.out.println("°¡À»");break;
+//			System.out.println("ê°€ì„");break;
 //		case 11:
-//			System.out.println("°Ü¿ï");break;
+//			System.out.println("ê²¨ìš¸");break;
 //		case 12:
-//			System.out.println("°Ü¿ï");break;
+//			System.out.println("ê²¨ìš¸");break;
 //		default:
-//			System.out.println("Àß¸øµÈ ÀÔ·Â");break;
+//			System.out.println("ì˜ëª»ëœ ì…ë ¥");break;
 //			
 //		}
 //	}
 //}
 
 package com.lec.condition;
+
 import java.util.Scanner;
+
 public class Q6 {
 	public static void main(String[] args) {
 		Scanner month = new Scanner(System.in);
-		System.out.print("¿ù:");
-		int b=month.nextInt();
-		
-		if(b==12 || b==1 || b==2) {
-			System.out.println("°Ü¿ï");
-		}else if (b==3 || b==4 || b==5) {
-			System.out.println("º½");
-		}else if (b==6 || b==7 || b==8) {
-			System.out.println("¿©¸§");
-		}else if (b==9 || b==10 || b==11) {
-			System.out.println("°¡À»");
-		}else {
-			System.out.println("Àß¸øµÈ ÀÔ·Â");
+		System.out.print("ì›”:");
+		int b = month.nextInt();
+
+		if (b == 12 || b == 1 || b == 2) {
+			System.out.println("ê²¨ìš¸");
+		} else if (b == 3 || b == 4 || b == 5) {
+			System.out.println("ë´„");
+		} else if (b == 6 || b == 7 || b == 8) {
+			System.out.println("ì—¬ë¦„");
+		} else if (b == 9 || b == 10 || b == 11) {
+			System.out.println("ê°€ì„");
+		} else {
+			System.out.println("ì˜ëª»ëœ ì…ë ¥");
 		}
 	}
-	
+
 }
-		

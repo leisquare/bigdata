@@ -1,11 +1,11 @@
 package com.lec.loop;
 
-//1~10±îÁö Â¦¼ö ¶Ç´Â È¦¼öÀÇ ÇÕ
+//1~10ê¹Œì§€ ì§ìˆ˜ ë˜ëŠ” í™€ìˆ˜ì˜ í•©
 public class Q2 {
 	public static void main(String[] args) {
 		int tot = 0;
 		for (int i = 1; i < 11; i++) {
-			// totº¯¼ö¿¡ i°ª ´©Àû
+			// totë³€ìˆ˜ì— iê°’ ëˆ„ì 
 			if (i % 2 == 1) {
 				System.out.print(i);
 				if (i != 9) {
@@ -13,15 +13,15 @@ public class Q2 {
 				}
 				tot = tot + i;
 			} else {
-			} // if´İ
+			} // ifë‹«
 
-		} // for´İ
+		} // forë‹«
 		System.out.print("=" + tot);
-	}// main´İ
+	}// mainë‹«
 }
 
 /*
  * for(int i=1 ; i<11; i++){ if(i%2 ==1) { sum +=i; } }
  */
 
-//for (int i = 1; i < 11; i+=2) ·Îµµ ¼³Á¤ °¡´É
+//for (int i = 1; i < 11; i+=2) ë¡œë„ ì„¤ì • ê°€ëŠ¥

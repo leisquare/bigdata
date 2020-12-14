@@ -5,17 +5,16 @@ import java.util.Scanner;
 public class Q3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¾î´À ¼öÀÇ ±¸±¸´Ü?");
+		System.out.print("ì–´ëŠ ìˆ˜ì˜ êµ¬êµ¬ë‹¨?");
 		int num1 = sc.nextInt();
 		for (int i = 1; i < 10; i++) {
 			int tot = num1 * i;
-			//System.out.printf("%d*%d=%2d\n", num1, i, num1*i);
-			//À§ÀÇ ÁÙ·Î ÀÔ·ÂÇÏ¸é ÁÙ¸ÂÃãÀÌ µÈ´Ù. ´õ ±ò²ûÇØº¸ÀÓ
+			// System.out.printf("%d*%d=%2d\n", num1, i, num1*i);
+			// ìœ„ì˜ ì¤„ë¡œ ì…ë ¥í•˜ë©´ ì¤„ë§ì¶¤ì´ ëœë‹¤. ë” ê¹”ë”í•´ë³´ì„
 			System.out.println(num1 + "*" + i + "=" + tot);
 			sc.close();
 		}
 	}
 }
-
 
 //System.out.printf("%d*%d=%2d\n", num1, i, num1i);

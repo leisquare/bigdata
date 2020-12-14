@@ -1,15 +1,13 @@
 package com.lec.loop;
 
-// *ÀÇ ¼ö¸¦ 5°³±îÁö ´Ã·Á°¡±â
+// *ì˜ ìˆ˜ë¥¼ 5ê°œê¹Œì§€ ëŠ˜ë ¤ê°€ê¸°
 public class Ex03_for3 {
 	public static void main(String[] args) {
 		for (int i = 1; i != 6; i++) {
-			for (int j = 1; j<=i; j++) {
+			for (int j = 1; j <= i; j++) {
 				System.out.print("*");
 			}
-		System.out.println();
+			System.out.println();
 		}
-
 	}
-
 }

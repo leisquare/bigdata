@@ -3,19 +3,19 @@
 //public class Q4 {
 //	public static void main(String[] args) {
 //		Scanner score = new Scanner(System.in);
-//		System.out.print("¼ö¸¦ ÀÔ·Â:");
+//		System.out.print("ìˆ˜ë¥¼ ì…ë ¥:");
 //		int a = score .nextInt();
 //		
 //	if (a>=90) {
-//		System.out.println("ÇĞÁ¡Àº A");
+//		System.out.println("í•™ì ì€ A");
 //	}else if (a>=80) {
-//		System.out.println("ÇĞÁ¡Àº B");
+//		System.out.println("í•™ì ì€ B");
 //		}else if (a>=70) {
-//		System.out.println("ÇĞÁ¡Àº C");
+//		System.out.println("í•™ì ì€ C");
 //		}else if (a>=60) {
-//		System.out.println("ÇĞÁ¡Àº D");
+//		System.out.println("í•™ì ì€ D");
 //		}else {
-//		System.out.println("ÇĞÁ¡Àº F");
+//		System.out.println("í•™ì ì€ F");
 //		}
 //	score.close();
 //	}
@@ -27,7 +27,7 @@ import java.util.Scanner;
 public class Q4 {
 	public static void main(String[] args) {
 		Scanner score = new Scanner(System.in);
-		System.out.print("Á¡¼ö:");
+		System.out.print("ì ìˆ˜:");
 		int b=score.nextInt();
 		int temp= b == 100 ? b-1 : b;
 
@@ -52,5 +52,3 @@ default:
  * int score = scanner.nextInt();
  * switch(score/10)
  */
-
-

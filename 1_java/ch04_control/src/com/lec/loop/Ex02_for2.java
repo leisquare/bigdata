@@ -1,19 +1,19 @@
 package com.lec.loop;
 
-//1~20 ´©ÀûÇÕ Ãâ·Â
-//1+2+3+4+.....+20= Ãâ·ÂÇÏ±â
+//1~20 ëˆ„ì í•© ì¶œë ¥
+//1+2+3+4+.....+20= ì¶œë ¥í•˜ê¸°
 public class Ex02_for2 {
 	public static void main(String[] args) {
 		int tot = 0;
 		for (int i = 1; i < 21; i++) {
-			// totº¯¼ö¿¡ i°ª ´©Àû
+			// totë³€ìˆ˜ì— iê°’ ëˆ„ì 
 			tot += i;
 			if (i != 20) {
 				System.out.print(i + "+");
 			} else {
 				System.out.print(i + "=");
-			} // if´İ		
-		} // for´İ
+			} // ifë‹«
+		} // forë‹«
 		System.out.println(tot);
-	}// main´İ
+	}// mainë‹«
 }

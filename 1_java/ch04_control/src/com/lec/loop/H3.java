@@ -6,33 +6,33 @@ public class H3 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		while (true) {
-			System.out.println("°¡À§(-),¹ÙÀ§(1),º¸(2)Áß ÇÏ³ª¸¦ ¼±ÅÃ:");
+			System.out.println("ê°€ìœ„(-),ë°”ìœ„(1),ë³´(2)ì¤‘ í•˜ë‚˜ë¥¼ ì„ íƒ:");
 			int you = scanner.nextInt();
 			if (you == 0) {
-				System.out.println("°¡À§!");
+				System.out.println("ê°€ìœ„!");
 			} else if (you == 1) {
-				System.out.println("¹ÙÀ§!");
+				System.out.println("ë°”ìœ„!");
 			} else if (you == 2) {
-				System.out.println("º¸!");
+				System.out.println("ë³´!");
 			} else if (you == -1) {
-				System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			} else {
-				System.out.println("¶¼³¢");
+				System.out.println("ë–¼ë¼");
 			}
 
-			// ÄÄÇ»ÅÍ
+			// ì»´í“¨í„°
 			int computer = (int) (Math.random() * 3);
 			if (computer == 0) {
-				System.out.println("°¡À§!");
+				System.out.println("ê°€ìœ„!");
 			} else if (computer == 1) {
-				System.out.println("¹ÙÀ§!");
+				System.out.println("ë°”ìœ„!");
 			} else if (computer == 2) {
-				System.out.println("º¸!");
+				System.out.println("ë³´!");
 			} else {
-				System.out.println("¶¼³¢");
+				System.out.println("ë–¼ë¼");
 			}
-			// ½ÂÆĞÆÇÁ¤
+			// ìŠ¹íŒ¨íŒì •
 			if ((you + 2) % 3 == computer) {
 				System.out.println(("you win"));
 			} else if ((you + 2) % 3 < computer) {

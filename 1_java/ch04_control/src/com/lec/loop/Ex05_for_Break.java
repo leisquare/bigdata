@@ -2,12 +2,12 @@ package com.lec.loop;
 
 public class Ex05_for_Break {
 	public static void main(String[] args) {
-	 for(int i=1 ; i<11 ; i++) {
-		 if(i==5) {
-			 //break; //Áï½Ã ¸ØÃß°í ¹Ýº¹¹® ºí·°À» ºüÁ®³ª°¡±â
-			 continue; // ¸ØÃß°í Áõ°¨½ÄÀ¸·Î ¿Ã¶ó°¡¶ó!
-		 }
-		 System.out.print(i+ " ");
-	 }
-}
+		for (int i = 1; i < 11; i++) {
+			if (i == 5) {
+				// break; //ì¦‰ì‹œ ë©ˆì¶”ê³  ë°˜ë³µë¬¸ ë¸”ëŸ­ì„ ë¹ ì ¸ë‚˜ê°€ê¸°
+				continue; // ë©ˆì¶”ê³  ì¦ê°ì‹ìœ¼ë¡œ ì˜¬ë¼ê°€ë¼!
+			}
+			System.out.print(i + " ");
+		}
+	}
 }

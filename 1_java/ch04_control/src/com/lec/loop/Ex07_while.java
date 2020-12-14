@@ -11,5 +11,4 @@ public class Ex07_while {
 			i--;
 		}
 	}
-
 }

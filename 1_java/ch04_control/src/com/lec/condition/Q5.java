@@ -3,13 +3,13 @@
 //public class Q5 {
 //	public static void main(String[] args) {
 //		Scanner score = new Scanner(System.in);
-//		System.out.print("¼ö¸¦ ÀÔ·Â:");
+//		System.out.print("ìˆ˜ë¥¼ ì…ë ¥:");
 //		int b = score .nextInt();
 //
 //		if(b%2==0) {
-//			System.out.println("Â¦¼ö");
+//			System.out.println("ì§ìˆ˜");
 //		}else {
-//			System.out.println("È¦¼ö");
+//			System.out.println("í™€ìˆ˜");
 //		}
 //	}
 //}
@@ -19,16 +19,16 @@
 //public class Q5 {
 //	public static void main(String[] args) {
 //		Scanner score = new Scanner(System.in);
-//		System.out.print("¼ö¸¦ ÀÔ·Â:");
+//		System.out.print("ìˆ˜ë¥¼ ì…ë ¥:");
 //		int b = score .nextInt();
 //		int a;
 //		a=(b%2);
 //		
 //		switch (a) {
 //		case 1:
-//		System.out.println("È¦¼ö");break;
+//		System.out.println("í™€ìˆ˜");break;
 //		}
 //		case 2:
-//		System.out.println("Â¦¼ö");break;
+//		System.out.println("ì§ìˆ˜");break;
 //		}		
 //}

@@ -3,14 +3,14 @@ package com.lec.condition;
 public class Ex02_if {
 	public static void main(String[] args) {
 		int seoulLunchPrice = 8000;
-		if(seoulLunchPrice>7000) {
-			System.out.println("¼­¿ï¹ä°ªºñ½Î³×");
-		}else if(seoulLunchPrice>=6000){
-			System.out.println("Àç·á°ª¸¸Å­ÀÌ³×");
-		}else if(seoulLunchPrice>=4000){
-			System.out.println("¹ä °ª ±¦Âú³×");
-		}else{
-			System.out.println("ÁÖÀÎÀº ±¦Âú³ª?");
+		if (seoulLunchPrice > 7000) {
+			System.out.println("ì„œìš¸ë°¥ê°’ë¹„ì‹¸ë„¤");
+		} else if (seoulLunchPrice >= 6000) {
+			System.out.println("ì¬ë£Œê°’ë§Œí¼ì´ë„¤");
+		} else if (seoulLunchPrice >= 4000) {
+			System.out.println("ë°¥ ê°’ ê´œì°®ë„¤");
+		} else {
+			System.out.println("ì£¼ì¸ì€ ê´œì°®ë‚˜?");
 		}
 	}
 }
