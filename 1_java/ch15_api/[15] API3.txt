@@ -1,0 +1,31 @@
+
+[15] API-3
+Scanner, Wrapper, Timer, 
+1. Scanner 및 sysout
+Scanner: 키보드에서 타이핑하는 문자열 또는 입출력 프로그램밍에서 값을 읽어올 때- 받아올 ㄸ 사용
+sysout: 콘솔창에만 출력되는 것. 테스트용.
+2. Wrapper 클래스
+기초 데이터를 객체 데이터로 변환하는 클래스. 대체로 첫 글자를 대문자로 변경해 사용(int만 Integer로 변경_
+String을 기초 데이터로 반환하는 메소드 ex) Integer.parseInt("123456"); 스트링을 정수로 반호낳나다.
+3. Timer 클래스
+TimerTask라는 추상 클래스를 상속받아 실행할 작업을 정의. 이렇게 정의된 작업을 실행하는 클래스로 두 종류가 있다.
+1) 일정 시간이 되면 1번 작동
+2) 일정 시간마다 반복
+4. Decimalformat
+숫자를 다양한 패턴으로 출력하기 위한 것.
+
+	public class Ex01 {
+	public static void main(String[] args) {
+		String[] patterns = { "00000000.00000", "########.#####", "#,#.000##", "#.##%", "#.##E00" };
+		double number = 1234567.8889;
+		for (String pattern : patterns) {
+			DecimalFormat df = new DecimalFormat(pattern);
+			System.out.println(df.format(number));
+		}
+
+
+
+
+
+
+
