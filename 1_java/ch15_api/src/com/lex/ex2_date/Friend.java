@@ -18,10 +18,10 @@ public class Friend {
 		System.out.printf("[이름] %s [전화] %s [생일] %s \n",name, tel, birth);
 	}
 //	System.out.println(f.toString())
-	@Override
-	public String toString() {
-		return "[이름] "+name+"  [전화] "+tel+"  [생일] "+birth;
-	}
+//	@Override
+//	public String toString() {
+//		return "[이름] "+name+"  [전화] "+tel+"  [생일] "+birth;
+//	}
 
 	
 	

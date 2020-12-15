@@ -1,0 +1,17 @@
+
+[15] API-2
+Math, Object API
+1. 수학적 계산에 사용되는 Math
+Math클래스의 정적 메소드(pow(승),abs(절대값),sqrt(제곱근),max,min)
+ceil(올림)round(반올림)floor(버림)
+2. Random 클래스(*math.random() 메소드: double 타입 임의의 수를 발생시킴. static douvle.
+Random클래스는 객체를 생성 후 실행 가능하다.
+Random random = new Random();
+int iran = random.nextInt(10); //0~9까지의 난수
+double doubleRan = random.nextDouble(); // math.random()과 같은 결과.
+3. 자바 클래스의 상속 계층.
+자바의 모든 클래스가 공통적으로 가지는 특성은 추출하여 Object라는 클래스화. 다른 모든 클래스는 Object 클래스를 상속함.
+toString(), equals(Object obj), hashCode() 등
+1) toString()  객체의 정보를 문자열로 제공할 목적으로 정의된 메서드.
+2) equals() 주소가 아닌 내용물을 비교해 같은지 아닌지를 판별함.
+3) hashCode() 해쉬코드를 반환함.

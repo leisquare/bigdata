@@ -21,6 +21,7 @@ public class Ex07_birthDay {
 		for (int idx = 0; idx < friends.length; idx++) {
 			String birthday = friends[idx].getBirth();
 			if (birthday.equals(today)) {
+				
 				System.out.println(friends[idx]);
 				searchOk = true;
 			} // if
