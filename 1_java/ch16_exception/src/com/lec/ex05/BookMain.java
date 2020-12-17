@@ -1,4 +1,4 @@
-package com.lec.ex05;
+rpackage com.lec.ex05;
 
 import java.util.Scanner;
 
