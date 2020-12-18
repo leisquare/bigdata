@@ -1,4 +1,4 @@
-package com.lec.ex1_inputStreamOutputStream;
+package com.lec.ex01_inputStreamOutputStream;
 //1. 파일을 연다(Stream 객체 생성) 2. 데이터를 읽는다.(1or 2byte) 3. 파일을 닫는다.
 
 import java.io.FileInputStream;

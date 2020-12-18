@@ -1,4 +1,4 @@
-package com.lec.ex1_inputStreamOutputStream;
+package com.lec.ex01_inputStreamOutputStream;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
