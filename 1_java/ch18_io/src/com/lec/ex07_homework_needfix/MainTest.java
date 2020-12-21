@@ -1,4 +1,4 @@
-package com.lec.ex07_homework;
+package com.lec.ex07_homework_needfix;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -36,7 +36,7 @@ public class MainTest {
 		for (Customer customer : customers) {
 			System.out.println(customer);
 		}
-		
+
 		try {
 			writer = new FileWriter("txtFile/customer.txt");
 			printWriter = new PrintWriter(writer); // 스트림 객체생성

@@ -1,4 +1,4 @@
-package com.lec.ex07_homework;
+package com.lec.ex07_homework_needfix;
 
 public class Customer {
 	private String name;
