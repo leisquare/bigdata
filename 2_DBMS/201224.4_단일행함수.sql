@@ -8,13 +8,13 @@ SELECT DEPTNO, SUM(SAL) FROM EMP GROUP BY DEPTNO;
 SELECT SUM(SAL) FROM EMP; --그룹함수의 예
 --EX. 숫자관련함수, 문자 관련 함수, 형변환 함수, NVL(), ETC....
 --(1) 숫자함수
-SELECT ABS(-9)=FROM M;\;
+SELECT ABS(-9)=FROM DUAL;
 DESC DUAL ; 오라클에서 제공하는 1행 1열짜리 더미 테이블
-SELECT ABS(-9) FROM DUAL ; 절대값
-SELECT LFOOR (S4.5678) FROM DUAL; --소수점에서 내림
-SELECT FLOOR (S4.5678)*10 /10 FROM DUAL
-SELECT TRUNC(S4.5678) FROM DUAL; --소수점에서 내림; 
-SELECT TRUNC(43.5678,-1) FROM DUAL; --일의 자리에서 내림점에서 내림
+SELECT ABS(-9) FROM DUAL; 절대값
+SELECT FLOOR (34.5678) FROM DUAL; --소수점에서 내림
+SELECT FLOOR (34.5678)*10 /10 FROM DUAL;
+SELECT TRUNC(34.5678) FROM DUAL; --소수점에서 내림; 
+SELECT TRUNC(34.5678,-1) FROM DUAL;
 
 --EMP 테이블에서 이름, 급여 십의 자리까지만 출력
 SELECT ENAME, TRUNC(SAL,-2) FROM EMP; 
@@ -32,6 +32,7 @@ SELECT MOD('9',2) FROM DUAL; --나머지 연산
 --홀수달에 입사한 직원들의 모든 필드를 출력
 SELECT * FROM EMP 
     WHERE MOD(TO_CHAR(HIREDATE,'MM'),2)=1;
+    
     
 --(2) 문자 함수
 SELECT UPPER('abcABC') FROM DUAL;
@@ -55,11 +56,11 @@ SELECT SUBSTRB('데이터베이스',4,3) FROM DUAL; --4번째 BYTE부터 3BYTE
 --영어는 한 문자가 1 BYTE, 한글 한문자가 3BYTE
 --9월에 입사한 사원의 모든 필드
 SELECT * FROM EMP WHERE SUBSTR(HIREDATE,4,2)=9;
-SELECT SUBSTR('010-99-9999',-4,4) FROM DUAL;
 --글자가 있으면
 --123456
 ---6,-5,-4,-3,-2,-1
 --이렇게 뒤에서부터도 셀 수 있다
+SELECT SUBSTR('010-99-9999',-4,4) FROM DUAL;
 --9일에 입사한 사원의 모든필드
 SELECT * FROM EMP WHERE SUBSTR(HIREDATE,-1,2)=9;
 
@@ -103,21 +104,28 @@ SELECT SYSDATE-1 어제, SYSDATE 지금, SYSDATE +1 내일 FROM DUAL;
 
 --14일 후
 SELECT SYSDATE+14 FROM DUAL;
+
 --이름, 입사일, 근무일자
 SELECT ENAME, HIREDATE, FLOOR(SYSDATE - HIREDATE)근무일자 FROM EMP;
+
 --이름, 입사일, 근무주수, 근무년수 출력
 SELECT ENAME, FLOOR((SYSDATE - HIREDATE)/7) 근무주수,FLOOR((SYSDATE - HIREDATE)/365) 근무년수 FROM EMP;
+
 --MONTHS_BETWEEN() 특정한 두 시점 사이의 개월수
 --이름, 입사일, 근무월수
 SELECT ENAME, HIREDATE, TRUNC(MONTHS_BETWEEN(SYSDATE, HIREDATE)) FROM EMP;
+
 --ADD_MONTHS(특정날짜, 개월수) 특정한 날짜로부터 몇개월 후의 시점
 --이름, 입사일, 수습기간만료일(수습기간은 6개월)
 SELECT ENAME, HIREDATE, ADD_MONTHS(HIREDATE, 6) FROM EMP;
+
 --NEXT_DAY(특정 날짜, '수') 특정 날짜로부터 처음 도래하는 수요일. 
 SELECT NEXT_DAY(SYSDATE,'토') FROM DUAL;
+
 --LAST_DAY(특정날짜) ; 특정 날짜인 달의 말일
 --이름, 입사일, 월급날(월급은 말일)
 SELECT ENAME, HIREDATE, LAST_DAY(HIREDATE) FROM EMP;
+
 --ROUND; 날짜 반올림, TRUNC: 날짜 버림
 SELECT ROUND(SYSDATE-30, 'YEAR') FROM DUAL; --결과 1월1일
 SELECT ROUND(SYSDATE-30, 'MONTH') FROM DUAL; --결과 1일
