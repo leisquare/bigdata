@@ -1,4 +1,4 @@
-package com.lex.ex0_conn;
+package com.lec.ex0_conn;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

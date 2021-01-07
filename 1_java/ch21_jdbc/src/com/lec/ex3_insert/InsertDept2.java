@@ -1,4 +1,4 @@
-package com.lex.ex3_insert;
+package com.lec.ex3_insert;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package com.lex.ex1_selectAll;
+package com.lec.ex1_selectAll;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

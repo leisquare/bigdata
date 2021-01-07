@@ -1,4 +1,4 @@
-package com.lex.ex2_selectWhere;
+package com.lec.ex2_selectWhere;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
