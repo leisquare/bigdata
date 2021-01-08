@@ -12,7 +12,7 @@ public class PersonDto {
 	
 	//insert용
 	public PersonDto(String name, String jname, int kor, int eng, int mat) {
-
+		
 		this.name = name;
 		this.jname = jname;
 		this.kor = kor;
