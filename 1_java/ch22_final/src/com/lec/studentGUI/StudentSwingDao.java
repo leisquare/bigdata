@@ -279,7 +279,6 @@ public class StudentSwingDao {
 			}
 		}
 		return dtos;
-
 	}
 
 	// 7. 제적자 출력
@@ -316,13 +315,11 @@ public class StudentSwingDao {
 				if (conn != null)
 					conn.close();
 			} catch (Exception e) {
-				// TODO: handle exception
+				System.out.println(e.getMessage());
 			}
 		}
 		return dtos;
-
 	}
-
 	// 8. 제적처리
 	public int sNoExpel(String sNo) {
 		int result = FAIL;
