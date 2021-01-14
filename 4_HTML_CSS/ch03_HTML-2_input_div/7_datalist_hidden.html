@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    전송안되는 부분 <input type="text" name="test" />
+    <form action="" method="get">
+        <p> 전화 <input type="tel" placeholder="000-0000-0000" name="tel" required="required"/></p>
+        <p> 카드 <input type="text" placeholder="xxxx-xxxx-xxxx-xxxx" name = "card" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+                      title="카드번호는 숫자 4자리 4번"/></p>
+        <p> 업무 <input type="text" name="job"  list="datalist"/> 
+               <datalist id="datalist">
+                   <option value="분석"></option>
+                   <option value="설계"></option>
+                   <option value="구현"></option>
+                   <option value="유지보수"></option>
+               </datalist>
+        </p>
+
+        <p>업무 2 <select name="job2">
+                     <option value="분석">분석</option>
+                     <option value="설계">설계</option>
+                     <option value="구현">구현</option>
+                     <option value="유지보수">유지보수</option>
+                  </select>
+        </p>
+            안보임<input type="hidden" name="no" value="99" />
+        <input type="submit" />
+
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        td {
+            text-align:center
+        }
+    </style>
+
+</head>
+<body>
+    <!--아이디와 비번을 입력받아 파라미터이름 id,
+        pw로 서버 프로그램측에 전달(get VS Post방식)
+        get은 주소창에 입력 내용이 전부 보임. post 방식이면 주소창에 안 보인다.-->
+    <h2> 로그인</h2>
+    <form action="http://www.naver.com" method="post">
+        <table>
+            <caption>로그인</caption>
+            <tr>
+                <td> 아이디</td>
+                <td> <input type="text" name="id" /></td>
+            </tr>
+            <tr>
+                <td>pw</td>
+                <td> <input type="password" name="pw" /></td>
+            </tr>
+            <tr>
+                <td colspan=" 2"><input type="submit" value="로그인" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

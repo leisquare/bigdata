@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="ex1.css" rel="stylesheet" type="text/css" />
+    <script>
+        function chk() {
+            if (frm.name.value.length < 2) {
+                alert("이름은 2글자 이상 입력하세요.")
+                frm.name.focus();
+                return false;
+            } else if (frm.id.value.length < 3) {
+                alert("id는 3글자 이상 입력하세요.")
+                frm.id.focus();
+                return false;
+            } else if (!frm.pw.value) {
+                alert("비밀번호를 입력하세요.")
+                frm.pw.focus();
+                return false;
+            } else if (frm.pw.value != frm.pwChk.value) {
+                alert("확인번호가 비밀번호와 일치하지 않습니다.")
+                frm.pw.value = "";
+                frm.pwChk.value = "";
+                frm.pw.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <center><h2>회원가입</h2></center>
+    </header>
+    <form name="frm" onsubmit="return chk()">
+        <fieldset>
+            <legend> 필수 입력사항</legend>
+            <table>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="name"> 이 름 <b>*</b> </label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="이름은 2글자 이상 입력"
+                               name="name" id="name" required="required" autofocus="autofocus" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="id"> 아이디 <b>*</b></label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="ID는 3글자 이상"
+                               name="id" id="id" required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="pw"> 비밀번호 <b>*</b></label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="password"
+                               name="pw" id="pw"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="pwChk"> 비밀번호 확인 <b>*</b></label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="password"
+                               name="pwChk" id="pwChk"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="email"> 이메일 <b>*</b></label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="id@domain.com 또는 co.kr"
+                               pattern="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+\.*[a-zA-Z]*"
+                               name="email" id="email" required="required" value="h@co.kr"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="tel"> 전화 <b>*</b></label>
+                        </center>
+                    </td>
+                    <td>
+                        <input type="tel" placeholder="000-0000-0000/00-000-0000"
+                               pattern="\d{2,3}-[0-9]{3,4}-[0-9]{4}" title="전화번호 형식을 지켜주세요"
+                               name="tel" id="tel" required="required" value="010-6689-6859" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend> 추가입력사항</legend>
+            <table>
+                <tr>
+                    <td>
+                        <center>
+                            <label for="from"> 출신 </label>
+                        </center>
+                    </td>
+                    <td>
+                        <select name="nation">
+                            <option value="seo">서울경기</option>
+                            <option value="inc">인천</option>
+                            <option value="kn">경남</option>
+                            <option value="kb">경북</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="marriage"> 결혼유무 </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="marriage" value="O" /> 기혼
+                        <input type="radio" name="marriage" value="X" />미혼
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="kids"> 자녀유무 </label>
+                    </td>
+                    <td>
+                        <input type="radio" name="kids" value="O" /> 있음
+                        <input type="radio" name="kids" value="X" />없음
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <center>
+            <p><input type="submit" value="가입" /><input type="reset" value="취소" /></p>
+        </center>
+    </form>
+    <hr />
+    <footer>
+        <center>
+            <p> 서울시 마포구 노고산동 그랜드빌딩 </p>
+            <p> Copyrightⓒ XX All rights reserved </p>
+        </center>
+    </footer>
+</body>
+</html>
