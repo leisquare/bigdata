@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        div #outside{
+            width:1000px;
+            margin: 0px auto;
+        }
+
+        #header, #content, #footer{
+            overflow:hidden;
+            background-color
+        }
+
+        #header .left {
+            width:150px;
+            height:150px;
+            background-color:lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 20px 0;
+        }
+
+        #header .center {
+            width: 693px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 0 0 20px 20px;
+        }
+
+        #header .right {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 0 20px;
+        }
+
+        #content .left {
+            width: 150px;
+            height: 300px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 0 20px 20px 0;
+        }
+
+        #content .center {
+            width: 693px;
+            height: 300px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 20px;
+            text-align:center;
+        }
+
+        #content .right {
+            width: 150px;
+            height: 300px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 20px 0 0 20px;
+        }
+
+         #footer .left {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 0 20px;
+        }
+
+        #footer .center {
+            width: 693px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 20px 20px 0 0;
+        }
+
+        #footer .right {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            float: left;
+            border-radius: 20px 0;
+        }
+
+        #content .center ul{
+            overflow:hidden;
+            list-style: none;
+            font-weight: bold;
+        }
+
+        #content .center ul li{
+            float: left;
+            margin: 20px;
+        }
+
+        /*       #content .right .red {
+            color: red;
+        }*/
+
+        .test ~li { /* h3태그 다음에 오는 div 형제들 다*/
+            color: red;
+        }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <div id="outside">
+        <div id="header">
+            <div class="left">
+            </div>
+            <div class="center">
+            </div>
+            <div class="right">
+            </div>
+        </div>
+        <div id="content">
+            <div class="left">
+            </div>
+            <div class="center">
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                </ul>
+                <h2>빅데이터 UI 전문가 양성</h2>
+                <p>컴퓨터 프로그래밍 언어로 업무에 맞는 소프트웨어의 기능 설계 및 구현이 가능하다.</p>
+            </div>
+            <div class="right">
+                <ol>
+                    <li>태그</li>
+                    <li>전체</li>
+                    <li>id.class</li>
+                    <li>속성</li>
+                    <li>후손자손</li>
+                    <li>동위</li>
+                    <li>반응</li>
+                    <li>상태</li>
+                    <li class="test">구조</li>
+                    <li class="red">문자</li>
+                    <li class="red">링크</li>
+                    <li class="red">부정</li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="left">
+            </div>
+            <div class="center">
+            </div>
+            <div class="right">
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

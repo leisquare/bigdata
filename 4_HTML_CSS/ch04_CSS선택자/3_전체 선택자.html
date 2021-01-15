@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * { /*페이지 초기와 용도. 전체 페이지 디자인을 적용시킬 때.. 가장 위에 써야함. */
+            margin:0; padding:0; color: darkcyan;
+
+        }
+        header, nav, section, footer {
+            width: 500px;
+            margin: 20px auto 20px auto;
+            border: 5px double gray;
+        }
+        nav ul {overflow:hidden; /* 수평으로 하고싶은 태그의 부모 단에 넣을 것.*/}
+        nav ul li { /*블록타입 태그를 수평으로*/
+            list-style:none; /* 목록 앞의 원형, 숫자 등의 구분자를 제거함*/
+            float:left;
+            padding: 10px 20px; /*안여백, 상우하좌. 두개만 쓰면 앞 2개가 반복*/
+        }
+        section {clear:both; /*overflow:hidden을 잘 했으면 생략하기도 함.*/}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1> 00 주식회사</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>회사 소개</li>
+            <li>서비스 소개</li>
+            <li>고객센터</li>
+            <li>공지사항</li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+            냉장실에 보관해둔 달걀이라면 미리 꺼내 실온에 두거나
+            미지근한 물에 넣어 실온 상태인 달걀로 만들고
+            달걀이 잠길 만큼 넉넉하게 물을 담고 소금, 식초를 넣어 삶아 주세요.
+            삶은 달걀은 껍질을 까서 준비해 줍니다.
+            양파는 채 썰어 준비해주세요.
+            달군 팬에 식용유 1을 두르고 달걀을 넣어
+            겉면을 노릇노릇하게 굴려가며 구워주세요.
+            구울 때 기름이 튈 수 있으니
+            뚜껑을 덮고 흔들어가며 구워주심 된답니다.
+            달걀이 구워지면 한쪽으로 밀어 넣고
+            채 썰어 놓은 양파를 넣고 달달 볶아주세요.
+            양파가 노릇노릇해지면 물 3컵을 부어주세요. 
+            바글바글 물이 끓어오르면. 카레 1봉지를 넣고. 중약불에서 카레가루를 잘 풀어주고. 농도가 나게 끓여 마무리합니다.
+        </p>
+    </section>
+    <footer>
+        <p>
+            서울시 XX구 XX동 XX XX빌딩 XX층
+        </p>
+    </footer>
+</body>
+</html>
