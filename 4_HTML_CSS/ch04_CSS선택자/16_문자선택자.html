@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap {width:800px; margin: 0 auto;}
+        #header {
+            text-align: center; /*글씨 가운데 정렬*/
+            border-bottom: 1px solid #cccccc;
+        }
+
+        #content p:nth-child(2)::first-line, #content p:nth-child(3)::first-line{/*문자선택자*/
+            color:blue; font-weight:bold;
+            font-size:20px;
+        } 
+
+        #content p:nth-child(2):first-letter{font-size:2em;} /*글씨 사이즈 2배*/
+
+        #content p:last-child span {/*문자선택자 모를경우*/
+            font-size: 2em;
+        }
+
+        #content p:nth-child(2)::selection {
+            background-color:lightpink; color:aquamarine;
+        }
+
+        #footer ul {
+            overflow:hidden;
+            border-top:1px solid #cccccc;
+        }
+
+        #footer ul li {
+            list-style: none;
+            float: left;
+            padding: 20px 20px;
+        }
+
+        #footer ul li:first-child {
+            padding-top :30px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1> 제목이나 회사명</h1>
+        </div>
+        <div id="content">
+            <p>미세먼지 ‘좋음’~‘보통’· 오전에 서쪽 오후에는 강원 경상내륙 많은 눈 예상... 낮 최고 10도</p>
+            <p>
+                18일 오늘의 날씨는 강원영동과 경상도를 제외한 전국이 대체로 흐리고 눈 또는 비가 오는 가운데 강원영동과 경상도는 구름많은 날씨를 보이고 있는 상황이다.
+                오늘의 날씨 예보는 눈 또는 비 후 갬. 강원영동, 경상남도 구름많다가 한때 흐림이다.
+                북쪽을 지나는 기압골의 영향을 받다가 벗어나 중국 북부지방에서 남하하는 고기압의 영향을 받겠다. 전국이 대체로 흐리거나 구름많은 가운데 눈 또는 비가 내리는 곳이 많겠고, 낮부터 전라도 및 제주도를 시작으로 그치기 시작해 오후에 전국 대부분 지역이 그치겠다.
+            </p>
+            <p>
+                <span>오늘의</span> 예상적설은 오늘 오후까지 전국 대부분 지역에 눈이 예상되고, 오전에는 주로 서쪽지역, 오후에는 강원도와 경상내륙에 많은 눈이 내리겠다. 낮 최고기온은 2도에서 10도가 되겠다.
+                경기남부, 충청도, 전라도, 강원영서남부, 강원산간, 경북북부내륙, 남부산간은 5~10cm(많은 곳 15cm이상), 서울경기, 강원영서북부, 울릉도, 독도는 3~8cm, 제주도, 경북남부는 1~3cm이다.
+                (초)미세먼지 예보의 경우 WHO권고기준으로는 전라도, 제주도 오전 미세먼지 ‘나쁨’, 오후 ‘좋음’~‘보통’, 그 밖의 전국 ‘좋음’~‘보통’이다.
+                환경부 기준에 의하면 전라도, 제주도 오전 미세먼지 ‘한때 나쁨’, 오후 ‘좋음’~‘보통’. 그 밖의 전국 ‘좋음’~‘보통’이다.
+            </p>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><img src="0115/logo.png" alt="고용노동부 로고" /></li>
+                <li><img src="0115/address.png" alt="회사주소" /></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

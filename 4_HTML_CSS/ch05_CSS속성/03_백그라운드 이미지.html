@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div{width:70%; margin: 0 auto; height:400px;
+            border:1px solid blue;
+            background-image:url(macaron_.png);
+        }
+        div:nth-child(1){background-position:left top; /*디폴트*/}
+        div:nth-child(3){background-position:center;} /*div의 2번째 자식은 br/니까 3을 써야 한다.*/
+        div:nth-child(5){background-position:100% 0%;} /*right top과 같다..*/
+        div:nth-child(7){background-position:right bottom;} /*100% 100%와 같다..*/
+        div:nth-child(9){background-repeat:repeat-x;
+                         background:url(macaron_.png) center repeat-x;
+                         background-attachment:fixed; /*브라우저의 left top과 맞춘다.*/
+
+        }
+        div:nth-child(11){background-repeat:no-repeat; }
+            
+    </style>
+</head>
+<body>
+    <div><h1>macaron</h1></div>
+    <br />
+    <div><h1>macaron</h1></div>
+    <br />
+    <div><h1>macaron</h1></div>
+    <br />
+    <div><h1>macaron</h1></div>
+    <br />
+    <div><h1>macaron</h1></div>
+    <br />
+    <div><h1>macaron</h1></div>
+    <br />
+</body>
+</html>

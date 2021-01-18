@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #contain{
+            width:700px; margin:0 auto; border:1px solid #cccccc;
+        }
+        #header{
+            height:50px; background-color:#cccccc;
+        }
+        #wrap{
+            height:200px;
+            position:relative;
+        }
+        #wrap #content1{
+            height:180px; width:420px;background-color:red;
+            position:relative;
+            top:10px; left:10px;
+            z-index:1;
+        }
+        #wrap #content2{
+            height:180px; width:300px; background-color:yellow;
+            position:absolute;
+            top:12px; right:10px;
+        }
+        #footer {
+            height: 50px;
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="contain">
+        <div id="header">header</div>
+        <div id="wrap">
+            <div id="content1"> CONTENT1(빨간왼쪽)</div>
+            <div id="content2"> CONTENT2(노란오른쪽)</div>
+
+        </div>
+        <div id="footer">footer</div>
+    </div>
+</body>
+</html>
