@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Amarante';
+    src: url('../font/Amarante-Regular.ttf');
+}
+
+    /*페이지 초기화*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman','Amarante','Times',serif;
+}
+    a{text-decoration:none; color:white;}
+    li{list-style:none;}
+
+header #header_nav {
+    overflow: hidden;
+    width:100%;
+    min-width: 1000px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2d1152;
+    font-size:1.1em;
+}
+
+header .gnb ul {
+    text-align: center;
+    align-content: center;
+    width: 800px;
+}
+
+    header .gnb ul li {
+        float: left;
+        margin: 0 10px;
+    }
+
+header #header_nav .survivalFootball {
+    float: right;
+}

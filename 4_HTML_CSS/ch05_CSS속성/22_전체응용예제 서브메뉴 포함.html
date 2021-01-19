@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            border: 1px solid gray;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+        }
+
+        #outside {
+            width: 800px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        #back_img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(sulhyun.jpg);
+            background-size: 100%;
+            opacity: 0.3;
+            z-index: -20;
+        }
+
+        #header, #nav, #footer {
+            width: 780px;
+            height: 100px;
+            border: 1px solid #cccccc;
+            align-content: center;
+            text-align: center;
+        }
+
+        #header, #footer {
+            line-height: 100px;
+            background-color: darkcyan;
+        }
+
+        #div #nav {
+            border: 1px solid #cccccc;
+            width: 780px;
+            font-weight: bold;
+            padding-top: 10px;
+            z-index: 999999; /*(서브메뉴가 활성화될 때 클릭 가능)*/
+            position: relative
+        }
+
+        #nav ul {
+            width: 720px;
+            list-style: none;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+            #nav ul >li {
+                list-style: none;
+                float: left;
+                background-color: pink;
+                text-align: center;
+                margin: 2px;
+            }
+
+                #nav ul li a {
+                    color: purple;
+                    text-decoration: none;
+                    font-weight: bold;
+                    display: block;
+                    width: 140px;
+                    height: 50px;
+                    line-height: 50px;
+                }
+
+        #wrap {
+            width: 780px;
+            height: 300px;
+            border: 1px solid #cccccc;
+
+        }
+        overflow: hidden;
+
+        #content {
+            text-align: center;
+            height: 280px;
+            width: 500px;
+            border: 1px solid #cccccc;
+            float: left;
+        }
+
+        #banner {
+            text-align: center;
+            height: 280px;
+            width: 230px;
+            border: 1px solid #cccccc;
+            float: left;
+        }
+
+        ul > li:first-child {
+            border-radius: 20px 0 0 20px; /* 좌상우상우하좌하*/
+        }
+
+        ul > li:last-child {
+            border-radius: 0 20px 20px 0;
+        }
+
+        /*서브메뉴 처리 부분*/
+        .submenu li{list-style:none;}
+        .submenu{
+            display:none;
+            background-color:white;
+        }
+        #nav>ul>li:hover .submenu{
+            display:block;
+        }
+
+        #nav > ul:hover .submenu {
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="outside">
+        <div id="header">
+            <h4>HEADER</h4>
+        </div>
+        <div id="nav">
+            <p>navigator</p>
+            <ul>
+                <li><a href="menu1">menu1</a>
+                    <ul class="submenu">
+                        <li><a href="#submenu1-1">submenu1-1</a> </li>
+                        <li><a href="#submenu1-2">submenu1-2</a> </li>
+                        <li><a href="#submenu1-3">submenu1-3</a> </li>
+                        <li><a href="#submenu1-4">submenu1-4</a> </li>
+                        <li><a href="#submenu1-6">submenu1-5</a> </li>
+                    </ul></li>
+                v<li><a href="menu2">menu2</a>
+                        <li><ul class="submenu">
+                        <li><a href="#submenu1-1">submenu1-1</a> </li>
+                        <li><a href="#submenu1-2">submenu1-2</a> </li>
+                        <li><a href="#submenu1-3">submenu1-3</a> </li>
+                        <li><a href="#submenu1-4">submenu1-4</a> </li>
+                        <li><a href="#submenu1-6">submenu1-5</a> </li>
+                    </ul></li>
+                <li><a href="menu3">menu3</a>
+                    <ul class="submenu">
+                        <li><a href="#submenu1-1">submenu1-1</a> </li>
+                        <li><a href="#submenu1-2">submenu1-2</a> </li>
+                        <li><a href="#submenu1-3">submenu1-3</a> </li>
+                        <li><a href="#submenu1-4">submenu1-4</a> </li>
+                        <li><a href="#submenu1-6">submenu1-5</a> </li>
+                    </ul></li>
+                <li><a href="menu3">menu1</a>
+                    <ul class="submenu">
+                        <li><a href="#submenu1-1">submenu1-1</a> </li>
+                        <li><a href="#submenu1-2">submenu1-2</a> </li>
+                        <li><a href="#submenu1-3">submenu1-3</a> </li>
+                        <li><a href="#submenu1-4">submenu1-4</a> </li>
+                        <li><a href="#submenu1-6">submenu1-5</a> </li>
+                    </ul></li>
+                <li><a href="menu4">menu1</a>
+                    <ul class="submenu">
+                        <li><a href="#submenu1-1">submenu1-1</a> </li>
+                        <li><a href="#submenu1-2">submenu1-2</a> </li>
+                        <li><a href="#submenu1-3">submenu1-3</a> </li>
+                        <li><a href="#submenu1-4">submenu1-4</a> </li>
+                        <li><a href="#submenu1-6">submenu1-5</a> </li>
+                    </ul></li>
+            </ul>
+        </div>
+        <div id="wrap">
+            <div id="content">
+                <h4>CONTENT</h4>
+            </div>
+            <div id="banner">
+                <h4>BANNER</h4>
+            </div>
+        </div>
+        <div id="footer">
+            <h4>FOOTER</h4>
+        </div>
+        <div id="back_img">
+        </div>
+    </div>
+
+
+</body>
+</html>

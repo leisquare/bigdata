@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/*헤더 영역*/
+
+
+header .gnb {
+    height: 30px;
+    background-color: black; 
+}
+
+    header .gnb ul {
+        margin: 0 auto;
+        display: block;
+        width: 1100px;
+        overflow: hidden;
+        text-align: center;
+        list-style: none;
+        align-content: center;
+    }
+
+        header .gnb ul li {
+            float: left;
+            list-style: none;
+            margin: 0 30px;
+        }
+
+            header .gnb ul li a {
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                width: 100px;
+                line-height: 30px;
+            }
+
+.logo {
+    width: 260px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight:bold;
+    margin: 30px auto;
+    border: 1px solid #CCCCCC;
+}
+
+.hitmenu {
+    margin: 10px auto;
+    height: 30px;
+    width: 1000px;
+    text-align: center;
+}
+header .hitmenu li {
+    list-style: none;
+    float: right;
+    text-decoration: none;
+    width: 80px;
+    line-height: 30px;
+    border: 1px solid black;
+    padding: 3px;
+    margin: 1px;
+}
+
+header .hitmenu li a {
+    text-decoration: none;
+    color: black;
+    width: 80px;
+    line-height: 30px;
+}
+
+.hitmenu ul li:first-child {
+    border-radius: 0 10px 10px 0;
+
+}
+
+.hitmenu ul li:last-child {
+    border-radius: 10px 0 0 10px;
+}
+
+
+header .lnb {
+    height: 30px;
+    margin: 0 auto;
+    border-top: 2px dotted #CCCCCC;
+    border-bottom: 2px dotted #CCCCCC;
+}
+    header .lnb ul {
+        display: block;
+        width: 1000px;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
+        list-style: none;
+        align-content: center;
+    }
+
+        header .lnb ul li {
+            float: left;
+            list-style: none;
+            margin: 0 37px;
+        }
+
+            header .lnb ul li a {
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                width: 100px;
+                line-height: 30px;
+            }
+
+
+
+/*컨텐츠영역*/
+#content {
+    width: 1000px;
+    margin: 0 auto 10px auto;
+}
+
+/*섹션1*/
+    #content .section1 {
+        width: 1000px;
+        height: 400px;
+        overflow: hidden;
+        margin: 0 0 10px;
+        text-align: center;
+        line-height: 400px;
+    }
+
+        #content .section1 .slide_banner {
+            float: left;
+            width: 700px;
+            height: 400px;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+        }
+        #content .section1 .side_banner {
+            float: left;
+            width: 300px;
+            height: 400px;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+        }
+
+/*섹션2*/
+    #content .section2 {
+        width: 1000px;
+        border: 1px solid #CCCCCC;
+        overflow: hidden;
+    }
+     #content .section2 .hit_product {
+        overflow:hidden;
+        margin: 0 0 10px 0;
+    }
+        #content .section2 .hit_product div {
+            float: left;
+            width: 240px;
+            height: 400px;
+            border: 1px solid #CCCCCC;
+            margin: 0 0 0 7px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    #content .section2 .md_product {
+        overflow:hidden;
+    }
+        #content .section2 .md_product div {
+            float: left;
+            width: 240px;
+            height: 400px;
+            border: 1px solid #CCCCCC;
+            margin: 0 0 0 7px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+    #content .section2 a{
+        text-decoration: none;
+        color: black;
+        line-height: 400px;
+    }
+
+/*footer*/
+footer {
+    overflow: auto;
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #CCCCCC;
+}
+    footer .office_logo {
+        float: left;
+        width: 200px;
+        height: 80px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+    }
+    footer .office_address {
+        float: left;
+        width: 600px;
+        height: 80px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+    }
+    footer .shopping_info {
+        float: left;
+        width: 200px;
+        height: 80px;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+    }
+    footer .copyright {
+        margin: 10px 0 0 0;
+        float: left;
+        width: 999px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        text-align:center;
+    }

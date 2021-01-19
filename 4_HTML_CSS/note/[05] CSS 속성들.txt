@@ -1,0 +1,45 @@
+
+[05] CSS 속성들
+
+	1.CSS3 단위들: em, %, px
+
+	2. url() 
+		백그라운드 이미지 속성값으로 많이 사용
+
+	3. background-image
+		배경을 지정하는 속성. 배경이미지 위치, 정렬 방향 등
+ 
+	4. display
+		화면에 어떻게 보일지를 설정하는 속성.
+		inline: span태그 유형. 높이 속성이 없다.
+		block: div p li태그 유형. 높이 속성이 있다.
+		inline-block: block의 속성을 갖고 옆으로 붙여나가는 것
+. 
+	5. visibility
+		visibility:hidden은 공간은 확보하지만 보이지 않음.
+		display:none은 공간도 확보 못함
+
+	6. opacity
+		투명도 조정
+
+	7. margin과 padding
+		
+	8. boxing-sizing
+		박스를 전체로 두고 사이징. 전체 사이즈의 크기변경이 가능하다. 
+
+	9. border
+		테두리 속성 변경 가능. 
+
+	10. 글자관련 속성; font-family, font-size, font-weight, font-style,
+                      line-height, text-align, text-decoration
+
+	11. position
+		①absolute 속성값
+		②fixed 속성값
+		③static 속성값	
+		④relative 속성값
+		⑤relative와 absolute의 혼합 사용
+	12. float
+	13. gradient
+	14. 웹폰트
+	
