@@ -9,19 +9,27 @@
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman','Amarante','Times',serif;
+
 }
-    a{text-decoration:none; color:white;}
+    a{text-decoration:none;}
     li{list-style:none;}
 
-header #header_nav {
-    overflow: hidden;
-    width:100%;
-    min-width: 1000px;
-    height: 30px;
-    line-height: 30px;
-    background-color: #2d1152;
-    font-size:1.1em;
+
+
+/*헤더네비*/
+header {
+    width: 100%;
+    height: 160px;
 }
+    header #header_nav {
+        overflow: hidden;
+        width: 100%;
+        min-width: 1000px;
+        height: 30px;
+        line-height:30px;
+        background-color: #2d1152;
+        font-size: 1.1em;
+    }
 
 header .gnb ul {
     text-align: center;
@@ -34,6 +42,227 @@ header .gnb ul {
         margin: 0 10px;
     }
 
+    header .gnb ul li a {
+        color:white;
+    }
+
 header #header_nav .survivalFootball {
     float: right;
 }
+    header #header_nav .survivalFootball a {
+        color: white;
+    }
+    /*헤더인포*/
+    header #header_info {
+        overflow: auto;
+        width: 1000px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    header #header_info .logo {
+        float: left;
+        width: 200px;
+        height:30px;
+        margin:25px 25px 0 25px;
+    }
+
+    header #header_info .search {
+        float: left;
+        width: 400px;
+        height: 30px;
+        margin:50px 0 0 0;
+    }
+
+        header #header_info .search .searchbar {
+            width: 250px;
+            height: 30px;
+            outline-color:blue;
+            border:1px solid blue;
+        }
+
+        header #header_info .search .search_btn {
+            width: 124px;
+            height: 37px;
+            background-image: url(../img/search_btn.png);
+            outline: 0;
+            border: 0;
+            color: white;
+        }
+
+    header #header_info .service {
+        overflow: hidden;
+        float: left;
+        width: 300px;
+        height: 30px;
+        margin:55px 0 0 0;
+        min-width: 300px;
+    }
+    header #header-info .service ul {
+        width: 300px;
+        height: 30px;
+        font-size: 1.1em;
+    }
+        header .service ul li {
+            float: left;
+            margin: 0 10px;
+            font-size: 1.1em;
+            line-height: 30px;
+        }
+            header .service ul li a{
+                color: black;
+            }
+
+ /*content*/
+
+#content {
+    margin:0 auto;
+    overflow:hidden;
+    width:1000px;
+    height: 100%;
+}
+
+    /*content main_menu*/
+    #content #main_menu {
+        float: left;
+        width: 155px;
+        height: 500px;
+        box-sizing: border-box;
+        margin: 0 3px 0 0;
+    }
+
+    header #main_menu  ul {
+        width: 150px;
+        font-size: 1.1em;
+    }
+        #content #main_menu ul li {
+            margin: 30px 30px;
+        }
+            #content #main_menu a {
+                color: black;
+    }
+
+/*content main*/
+#content #main {
+    float: left;
+    width: 600px;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 3px 0 0;
+}
+
+        #content #main .div1 {
+            height: 300px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+        #content #main #div2 {
+            height: 150px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+        #content #main #div3nav {
+            height: 50px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+            background-color:#500095;
+        }
+        #content #main #div4 {
+            height: 100px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+        #content #main #div5 {
+            height: 100px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+        #content #main #div6 {
+            height: 100px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+        #content #main #div7 {
+            height: 100px;
+            border: 1px solid gray;
+            margin: 0 0 3px 0;
+            box-sizing: border-box;
+        }
+
+         #content .midnav ul {
+            width: 600px;
+            align-content:center;
+         }
+
+            #content .midnav li {
+                margin: 0 22px;
+                float: left;
+            }
+                #content .midnav li a {
+                    line-height:50px;
+                    color:white;
+                }
+
+
+#content #main_banner {
+    float: left;
+    width: 220px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+    #content #main_banner #hitword {
+        height: 100px;
+        border: 1px solid gray;
+        margin: 0 0 3px 0;
+        box-sizing: border-box;
+    }
+
+    #content #main_banner #ad1 {
+        height: 150px;
+        border: 1px solid gray;
+        margin: 0 0 3px 0;
+        box-sizing: border-box;
+    }
+
+    #content #main_banner #ad2 {
+        height: 150px;
+        border: 1px solid gray;
+        margin: 0 0 3px 0;
+        box-sizing: border-box;
+    }
+
+    #content #main_banner #ad3 {
+        height: 200px;
+        border: 1px solid gray;
+        margin: 0 0 3px 0;
+        box-sizing: border-box;
+    }
+
+    #content #main_banner #ad4 {
+        height: 100px;
+        border: 1px solid gray;
+        margin: 0 0 3px 0;
+        box-sizing: border-box;
+    }
+
+    footer{
+        width:1000px;
+        height:100px;
+        margin: 0 auto;
+        border: 1px solid gray;
+    }
+        footer ul {
+            margin: 20px auto 0 auto;
+            width: 800px;
+            overflow: hidden;
+        }
+    footer ul li{
+        float:left;
+    }

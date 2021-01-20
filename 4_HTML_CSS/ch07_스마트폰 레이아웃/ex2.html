@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport" 
+          content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=0.7" />
+    <title></title>
+    <style>
+        /*페이지 초기화*/
+        *{margin:0; padding:0; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+        li{list-style:none;}
+
+        a{text-decoration:none;}
+        /*헤더*/
+        header {
+            height:100px;
+            background-color:#ea8f00;
+        }
+        /*헤더의 logowrap*/
+        header #logo_wrap{
+            height:50px; line-height:50px; text-align:center; position:relative;
+        }
+        header #logo_wrap a {color:#FFFFFF; font-size:1.5em;}
+            header #logo_wrap img.menu {
+                position:absolute; top:0; left:10px;
+            }
+            header #logo_wrap img.myinfo{
+                position:absolute; top:0; right:10px;
+            }
+        /*헤더의 #search*/
+            header #search {
+                height: 50px;
+                position:relative; /*돋보기 이미지를 #search위에*/
+            }
+            header #search input[type='text']{
+                width:100%; height:50px;
+                border:3px solid #ea8f00;
+                outline:3px solid #ea8f00;
+                box-sizing:border-box;
+                padding:5px 55px 5px 5px;
+                font-size:1.3em;
+            }
+
+            header #search input[type='submit']{
+                background:url('0120_imgEx2/search.png');
+                width:50px; height:50px;
+                border:0; outline:0;
+                position:absolute;
+                top:0; right:0;
+            }
+
+            /************#lnb ***********/
+            #lnb ul{overflow:hidden; margin:7px 0; /*위아래만 여백 7px로*/}
+            #lnb ul li{
+                float:left; width:16.6666%;
+                border-right:1px solid #ea8f00;
+                box-sizing:border-box;
+                text-align:center;
+            }
+            #lnb ul li:last-child{border:0;}
+
+
+            /************#section 1 ***********/
+            #section1 .row1, #section1 .row2, #section1 .row3{
+                overflow:hidden;
+            }
+            .row1 div, .row2 div, .row3 div{
+                float:left; width:50%; height:135px;
+                border:2px solid white;
+                box-sizing:border-box;
+            }
+
+            #section1 img{width:100%; height:100%;}
+
+            /************#section 2 ***********/
+            section #section2{margin:7px;}
+            section #section2 ul li{
+                padding:4px;
+                border: 1px solid gray;
+                /*말줄임*/
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
+            }
+
+             /************#section 3 ***********/
+             section #section3 ul li{
+                 border: 1px solid lightgray;
+                 height:120px; padding:10px; margin:7px;
+                 position:relative;
+             }
+             section #section3 ul li p.img{
+                 position:absolute; top:10px; left:10px;
+                 width:100px; height:100px;
+             }
+             section #section3 ul li p.txt{
+                 width:100%-20px;
+                 padding: 10px 20px 10px 120px;
+             }
+
+             section #section3 ul li p.txt span:first-child{
+                 display:block;
+                 font-size:1.2em;
+                 font-weight:bold;
+                 color:darkblue;
+                 /*말줄임태그*/
+                 white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+
+             }
+
+             /*footer*/
+             footer {background-color: #ea8f00;
+              text-align:center;
+             }
+             footer p:last-child{margin:5px; padding: 5px 5px 20px 5px;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo_wrap">
+            <img src="0120_imgEx2/menu.png" class="menu" alt="메뉴 아이콘" />
+            <a href="ex2.html" class="logo">mobile logo</a>
+            <img src="0120_imgEx2/myinfo.png" class="myinfo" alt="내정보"/>
+        </div>
+        <div id="search">
+            <form action="">
+                <input type="text" name="query_word"/>
+                <input type="submit" value="" />
+            </form>
+        </div>
+    </header>
+    <div id="lnb">
+        <ul>
+            <li><a href="#">lnb1</a></li>
+            <li><a href="#">lnb2</a></li>
+            <li><a href="#">lnb3</a></li>
+            <li><a href="#">lnb4</a></li>
+            <li><a href="#">lnb5</a></li>
+            <li><a href="#">lnb6</a></li>
+        </ul>
+    </div>
+    <section>
+        <div id="section1">
+            <div class="row1">
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/400x200.png" alt="1행1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/200x200.png" alt="1행2열" />
+                    </a>
+                </div>
+            </div>
+            <div class="row2">
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/300x300.png" alt="2행1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/300x200.png" alt="2행2열" />
+                    </a>
+                </div>
+            </div>
+            <div class="row3">
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/300x300.png" alt="3행1열" />
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.msn.com/ko-kr/news/national/%EC%86%8D%EB%B3%B4-%EC%A7%88%EB%B3%91%EC%B2%AD-%EC%95%84%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%A0%9C%EB%84%A4%EC%B9%B4-%EB%B0%B1%EC%8B%A0-1%EB%B6%84%EA%B8%B0-%EB%8F%84%EC%9E%85-%EC%B0%A8%EC%A7%88-%EC%97%86%EC%9D%B4-%EC%A7%84%ED%96%89-%EC%A4%91/ar-BB1cUbav?ocid=msedgntp">
+                        <img src="https://via.placeholder.com/300x200.png" alt="3행2열" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <ul>
+                <li>
+                    <a href="https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=222212525733">
+                        넷플릭스 오리지널 시리즈를 자주 본다면 아마 한 번쯤은 이런 생각을 했을 테다. 실제로 넷플릭스는 산타 클라리타 다이어트, 빨간 머리 앤, 아임 낫 오케이 등 꽤 인기 있는 작품을 제작 취소했다.
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=222212525733">
+                        넷플릭스 오리지널 시리즈를 자주 본다면 아마 한 번쯤은 이런 생각을 했을 테다. 실제로 넷플릭스는 산타 클라리타 다이어트, 빨간 머리 앤, 아임 낫 오케이 등 꽤 인기 있는 작품을 제작 취소했다.
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=222212525733">
+                        넷플릭스 오리지널 시리즈를 자주 본다면 아마 한 번쯤은 이런 생각을 했을 테다. 실제로 넷플릭스는 산타 클라리타 다이어트, 빨간 머리 앤, 아임 낫 오케이 등 꽤 인기 있는 작품을 제작 취소했다.
+                    </a>
+                </li>
+                <li>
+                    <a href="https://blog.naver.com/PostView.nhn?blogId=tech-plus&logNo=222212525733">
+                        넷플릭스 오리지널 시리즈를 자주 본다면 아마 한 번쯤은 이런 생각을 했을 테다. 실제로 넷플릭스는 산타 클라리타 다이어트, 빨간 머리 앤, 아임 낫 오케이 등 꽤 인기 있는 작품을 제작 취소했다.
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="section3">
+            <ul>
+                <li>
+                    <p class="img"><img src="http://placehold.it/100x100" /></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 에정</span>
+                        <span>두번째 span은 말줄임 안 할 예정</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img"><img src="http://placehold.it/100x100" /></p>
+                    <p class="txt">
+                        <span>첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 예정첫번째 span은 말줄임표 할 에정</span>
+                        <span>두번째 span은 말줄임 안 할 예정</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p> <img src="0120_imgEx2/logo.png" alt="회사로고"></p>
+        <p> 서울시 마포구 노고산동 XX빌딩 704호</p>
+    </footer>
+</body>
+</html>
