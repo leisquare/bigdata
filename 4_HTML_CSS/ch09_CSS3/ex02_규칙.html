@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <style>
+        @import url('css/title.css');
+        @import url('css/date.css');
+
+        @media print {
+            #wrap .content {
+                background-color: white;
+                color: red;
+                font-size: 16px;
+                padding: 30px 10px;
+            }
+        }
+
+        @media screen {
+            #wrap .content {
+                background-color: darkgreen;
+                color: yellow;
+                font-size: 1.5em;
+                padding: 30px 10px;
+            }
+        }
+    </style>
+
+    /head>
+    <body>
+        <div id="wrap">
+            <div class="title">
+                <h1>NOTICE</h1>
+                <hr />
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at sapien vitae massa viverra tempor vitae eget turpis. Fusce ligula ligula, imperdiet in nisl ut, rhoncus ultricies nunc. Mauris quis velit in leo hendrerit interdum. In ultricies erat mauris, at facilisis nunc elementum vitae. Nunc non ligula mi. Mauris volutpat mi eu tellus commodo, at ultricies nisl molestie. Maecenas id dapibus dolor. Donec vehicula est quis est lacinia pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt interdum venenatis. Quisque vitae consectetur ligula. Curabitur ultricies sed justo nec dapibus. Donec vel arcu ornare, gravida mi vitae, volutpat quam. Integer et magna finibus, iaculis mauris sed, aliquet lectus. Nam porttitor convallis vehicula</p>
+            </div>
+            <div class="date">
+                <p>2021.01.21<br />write by minjae choi</p>
+            </div>
+        </div>
+    </body>
+</html>

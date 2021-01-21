@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=0.7"/>
+    <title></title>
+    <style>
+        @media screen and (max-width:767px){/*스마트폰 화면*/
+            #wrap{width:100%; background-color:lightpink;}
+            #wrap ul li{width:33.3333%;}
+            #wrap ul li:nth-child(3),
+            #wrap ul li:nth-child(5){display:none;}
+
+        }
+        @media screen and (min-width:768px) and (max-width:999px){/*태블릿 화면*/
+            #wrap{width:100%; background-color:aquamarine;}
+            #wrap ul li{width:25%;}
+            #wrap ul li:nth-child(5){display:none;}
+        }
+        @media screen and (min-width:1000px){ /*pc화면 */
+            #wrap{width:1000px; margin:3px auto;}
+            #wrap ul li{width:20%;}
+        }
+        /* 공통부분*/
+        *{margin:0; padding:0;}
+        li{list-style:none;}
+        a{text-decoration:none;}
+        #wrap{border:1px solid gray;}
+        #wrap #header{height:100px; 
+                      line-height:100px; 
+                      text-align:center;
+                      border-bottom:1px solid gray;
+        }
+        #wrap ul{overflow:hidden;}
+        #wrap ul li{float:left; 
+                    height:60px; 
+                    line-height:60px; 
+                    text-align:center; 
+                    border:1px solid gray;
+                    box-sizing:border-box;
+        }
+        #wrap #content{padding:10px;}
+        #wrap #footer{
+            height:100px; line-height:100px; text-align:center;
+            font-size:1.2em; font-weight:bold; background-color:dimgrey;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1>반응형 웹</h1>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="#">menu1</a></li>
+                <li><a href="#">menu2</a></li>
+                <li><a href="#">menu3</a></li>
+                <li><a href="#">menu4</a></li>
+                <li><a href="#">menu5</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>보는 사람들 소름 돋게 한 ‘스위트홈’ 연근 괴물, CG 아닌 사람이었다</h2>
+            <p>
+                국내외에서 인기를 끌고 있는 웹툰 원작 넷플릭스 드라마 ‘스위트홈.’ 보는 이들이 모두 컴퓨터그래픽(CG)일 거라 착각할 정도로 실감 났던 연근 괴물의 정체는 다름 아닌 현대무용가이자 배우인 김설진(40)이었다. 연근 괴물을 직접 연기한 것뿐 아니라 괴물들의 움직임 모두 김설진이 구상했다.
+                김설진을 소개하는 또 다른 수식어는 안무가다. 그는 제주 출신의 타고난 춤꾼이었다. 1991년부터 스트릿 댄서로 활동하기 시작했고, 이후 방송으로 문을 넓혔다. 뒤늦게 현대무용에 빠져 대학에 진학한 이후 벨기에의 세계적인 무용단 ‘피핑톰 무용단’에도 입단했다. 2014년에는 Mnet의 ‘댄싱9’ 시즌 2에서 우승해 이름을 알렸고, 최근 배우로도 변신했다. 끊임없이 여러 방면에서 활발한 작품 활동을 펼치고 있는 그의 이야기를 들어봤다.
+            </p>
+        </div>
+        <div id="footer">
+            홍길동주식회사
+        </div>
+    </div>
+</body>
+</html>

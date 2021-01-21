@@ -1,0 +1,7 @@
+﻿#wrap .content {
+    background-color: white;
+    color: red;
+    font-size: 16px;
+    @import url('file:///E:\kim_jiwon\src\4_HTML_CSS\ch09_CSS3\css\content_screen.css');
+    padding: 30px 10px;
+}
