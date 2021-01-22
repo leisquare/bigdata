@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function chk() {
+
+            var i1 = Number(frm.su1.value);
+            var i2 = Number(frm.su2.value);
+            var cha = (i1 > i2) ? (i1-i2) : (i2-i1);//큰수-작은수
+            if (i1 > i2) {
+                alert('수1이 수2보다 ' + cha + '만큼 큽니다');
+            } else if (i1 < i2) {
+                alert('수2가 수1보다 ' + cha + '만큼 큽니다');
+            } else {
+                alert('두 수가 같습니다.');
+            }
+            document.body.innerHTML += result;
+
+            newResult = result.substring(0, result.indexOf('</p>'));
+            newResult = newResult.substring(3);
+            frm.su1.value = i1;
+            frm.su2.value = i2;
+            alert(newResult);
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="frm" onsubmit=" return chk()" >
+        <table>
+            <tr>
+                <td> 수1 </td>
+                <td> <input type="text" name="su1" id="su1" /></td>
+            </tr>
+            <tr>
+                <td> 수2 </td>
+                <td> <input type="text" name="su2" id="su2" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="결과" />
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

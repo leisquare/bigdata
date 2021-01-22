@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        function chk() {
+            if (frm.name.value.length < 2) {
+                alert('이름은 두글자 이상');
+                frm. 
+                return false;
+            }
+        }
+
+        var ageStr
+
+        //false로 인식되는 것들 : 0 '' null undefibed Nan emd
+        if(!frm.addr.value){
+            alert('주소를 입력하세요');
+            frm.addr.focus();
+            return false;
+        }
+        return true;
+        
+
+
+    </script>
+
+</head>
+<body>
+    <form action=" " name="frm" onsubmit="return chk()">
+        <table>
+            <tr>
+                <td>
+                    이름
+                </td>
+                <td>
+                    <input type="text" name="name" value="이름은 2글자 이상"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    나이
+                </td>
+                <td>
+                    <input type="text" name="age" value="나이는 0~120,까지"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    주소
+                </td>
+                <td>
+                    <input type="address" name="address" value="주소는 입력만"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=" 2"><input type="submit" value="로그인" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

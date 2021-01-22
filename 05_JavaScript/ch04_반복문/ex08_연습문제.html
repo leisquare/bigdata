@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        var temp, count, temp, a, x
+        var count = 1;
+        document.write(count + '<br>');
+
+        for (count = 1; count < 6; count++); {
+            document.write(count+'<br>');
+            alert('누적할래?')
+            a = prompt('누적할 점수');
+
+            if (a != null && a != '' && !isNaN(a) && a >= 0 && a <= 100) {
+                temp += a;
+                document.write(count + '<br>');
+            } else {
+                x++
+                document.write(count + '<br>');
+            }
+        }
+        document.write(count - 1 + '번 입력');
+        document.write('누적 점수'+temp);
+        document.write('제대로 입력한 횟수: '+(count-1-x));
+        document.write('잘못 입력한 횟수: '+x);
+
+
+    </script>
+
+    
+
+</head>
+<body>
+
+</body>
+</html>

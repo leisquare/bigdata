@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var week = new Date().getDay(); //0:일 1:월...
+
+        document.write('<h1> 금요일이다 </h1>'); //이게 아래쪽에 있으면 document가 생성이 안 된 상태라서 작성이 되지 않음.
+
+        switch(week){
+            case 0: document.bgColor = '#ff0000'; break;
+            case 1: document.bgColor = 'orange'; break;
+            case 2: document.bgColor = 'yellow'; break;
+            case 3: document.bgColor = 'green'; break;
+            case 4: document.bgColor = 'blue'; break;
+            case 5: document.bgColor = 'navy'; break;
+            case 6: document.bgColor = 'purple'; break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        temp = prompt('몇 단?', '1~9');
+        var su2
+        document.write('<table>')
+        document.write('<caption>' + temp + '단 구구단 </caption>');
+        for (su2 = 1; su2 < 10; su2++) {
+            document.write('<tr><td>' + temp + '*' + su2 + '=' + (temp * su2) + '</td></tr>');
+        }
+        document.write('</table>');
+
+    </script>
+    <style>
+        table {
+            width: 100px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+</html>

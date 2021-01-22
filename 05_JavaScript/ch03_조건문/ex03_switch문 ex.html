@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        do {
+            korStr = prompt('국어점수', '0~100');
+            kor = Number(korStr);
+            if (korStr != null && korStr != '' && !isNaN(kor) && kor >= 0 && kor <= 100) {
+                break;
+            }
+        } while (true);
+
+        do {
+            matStr = prompt('수학점수', '0~100');
+            mat = Number(matStr);
+            if (matStr != null && matStr != '' && !isNaN(mat) && mat >= 0 && mat <= 100) {
+                break;
+            }
+        } while (true);
+
+        document.write('평균: ' + (kor + mat) / 2+'</br>');
+        avg = (kor + mat) / 2;
+        document.write(Math.trunc(avg/10));
+        switch (Math.trunc(avg/10)) {
+            case 10: case 9: alert('수'); break;
+            case 8: alert('우'); break;
+            case 7: alert('미'); break;
+            case 6: alert('양'); break;
+            default: alert('가'); break;
+            //case 1: case 2: case 3: case 4: case 5: document.write('가'); break;
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

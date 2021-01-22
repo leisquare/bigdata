@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var arr = [273, 32, '홍길동'];
+        //1.일반 for문
+        document.write('<h3>1. 일반 for문 이용</h3>');
+        for (var idx = 0; idx < arr.length; idx++) {
+            document.write(idx + '번째: ' + arr[idx] + '<br>');
+        }
+      
+
+        //2. for-in 문
+        document.write('<h3>1.for-in문</h3>')
+        for (var idx in arr) {
+            document.write(idx + '번째: ' + arr[idx] + '<br>');
+        }
+        //3. forEach()문
+        document.write('<h3>3.forEach() 사용</h3>');
+        //배열명:arr
+        //배열안의 데이터는 273,32,홍길동
+        //인덱스는 0,1,2.
+        arr.forEach(function (data, idx) { //data 배열데이터.
+            document.write(idx + '번째: ' + arr[idx] + '<br>');
+        });
+
+        //4. forEach()함수이용 2
+        document.write('<h3>4.forEach() idx없이 함수수행<h3>');
+        arr.forEach(function (data) {
+            document.write(data + '<br>');
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

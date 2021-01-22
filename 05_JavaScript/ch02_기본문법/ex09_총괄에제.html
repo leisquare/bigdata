@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //prompt를 이용, 국어영어점수(0~100) 입력받을 것
+        //평균 구할 것
+        do {
+            korStr = prompt('국어점수?', '0~100');
+            kor = Number(korStr);
+            if (korStr!= null&& korStr != '' && !isNaN(kor) && kor >= 0 && kor <= 100) {
+                break;
+            }
+        } while (true);
+
+        do {
+            engStr = prompt('영어점수?', '0~100');
+            eng = Number(engStr);
+            if (engStr != null&&engStr != '' && !isNaN(eng) && eng >= 0 && eng <= 100) {
+                break;
+            }
+        } while (true);
+        document.write('평균 : ' + (kor+eng) / 2);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
