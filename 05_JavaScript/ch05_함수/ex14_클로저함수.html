@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function test(name) {
+            var msg = 'hello, ' + name + '님 안녕하세요';
+            return function () { alert(msg); };
+            return result; //클로저 함수. 리턴된 함수
+        }
+        var fun = test('홍길동');
+        //function()+{alert('Hello, 홍길동님 방가방가');}
+        fun();
+
+        test('김길자')();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

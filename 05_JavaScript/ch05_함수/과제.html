@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+       
+        /*
+
+        setInterval(function () {
+            document.write(new Date() + '<br>');
+            document.write('과제');
+            document.body.style.Color = 'yellow';
+            document.body.style.backgroundColor = '#FF0000';
+            document.body.style.backgroundImage = "url('0125_img/img01.png')";
+        }, 1000);
+        
+
+        setTimeout(function () {
+            clearInterval(1000)
+            document.body.style.backgroundColor = 'red';
+        }, 10000);
+        */
+
+        var s = 0;
+        var col = ['red', 'blue', 'yellow'];
+        var bgimage = ["url('0125_img/img01.png')", "url('0125_img/img02.png')", "url('0125_img/img03.png')"];
+
+        setInterval(function () {
+            document.write(new Date());
+            document.body.style.color = col[s % 3];
+            s++;
+        },1000)
+
+
+
+        var timemake= setInterval(function () {
+            document.write(new Date() + '<br>');
+        }, 1000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'green';
+            document.body.style.backgroundColor = 'yellow';
+            document.body.style.backgroundImage = "url('0125_img/img01.png')";
+        }, 1000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'black';
+            document.body.style.backgroundColor = 'red';
+        }, 2000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'pink';
+            document.body.style.backgroundColor = 'blue';
+        }, 3000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'green';
+            document.body.style.backgroundColor = 'yellow';
+        }, 4000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'black';
+            document.body.style.backgroundColor = 'red';
+        }, 5000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'pink';
+            document.body.style.backgroundColor = 'blue';
+        }, 6000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'green';
+            document.body.style.backgroundColor = 'yellow';
+        }, 7000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'black';
+            document.body.style.backgroundColor = 'red';
+        }, 8000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'pink';
+            document.body.style.backgroundColor = 'blue';
+        }, 9000);
+
+        setTimeout(function () {
+            document.body.style.Color = 'green';
+            document.body.style.backgroundColor = 'yellow';
+        }, 10000);
+
+        setTimeout(function () {
+            clearInterval(timemake);
+            document.write('Done');
+        }, 10000);
+
+
+
+    </script>
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

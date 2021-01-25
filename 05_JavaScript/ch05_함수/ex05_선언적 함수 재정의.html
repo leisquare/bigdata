@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script> //선언적 함수 재정의
+        //익명함수는 정의 전에는 사용불가
+        funVar(); //선언적 함수는 정의 전 사용 가능. 함수 B 경고창이 뜬다.
+        function funVar() {
+            alert('함수A');
+        };
+        alert(funVar);
+        funVar(); // 함수 B 경고창
+        function funVar() {
+            alert('함수B');
+        };
+        alert(funVar);
+        funVar(); // 함수 B 경고창
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

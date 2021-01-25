@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        document.write('<h1>text</h1>');
+        setTimeout(function () {
+            alert('3초 지났다');
+        }, 3000); //한 번 수행
+        var cnt = 0;
+        nowTime = new Date().getTime();//현재 밀리세컨
+        while (new Date().getTime() < nowTime + 1000) {
+            cnt++;
+        }
+        alert('1초동안 '+cnt+'번 while문 반복수행');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

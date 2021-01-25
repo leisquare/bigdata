@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var i = 10;
+        var functionVar = function () { alert('test'); }; //익명함수
+        document.write(functionVar + '<br>');
+        document.write(typeof (functionVar));
+        functionVar() // 익명함수 호출은 변수의 이름에 () 붙여 호출. 크롬에서는 이게 제일 먼저 뜨는데 크롬이 alert를 가장 먼저 띄우기 때문
+        //익명함수 호출시에는 함수형 변수에 할당 후에 사용해야한다. 
+
+
+        //alert(functionVar);
+        //alert(typeof (functionVar)); 
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

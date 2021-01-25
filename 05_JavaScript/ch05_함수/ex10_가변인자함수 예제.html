@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="ex10_sumAll.js"></script>
+    <script>
+        var sum1 = sumAll(); // 매개변수 없으면 -999 리턴
+        var sum2 = sumAll(1); //1 매개변수 1개 이상이면 누적값 리턴
+        var sum3 = sumAll(1, 2, 3, 4, 5); //15
+
+        document.write(sum1);
+        document.write(sum2);
+        document.write(sum3);
+
+        /*
+        function sumAll() {
+            var result = 0;
+            if (arguments.length >= 1) {
+                for (var cnt = 0; cnt < arguments.length; cnt++)
+                    result += arguments[cnt];
+            } else if (arguments.length == 0) {
+                result = -999;
+            }
+            return result;
+        }*/
+
+
+        /*
+        var arr = [10, 20, 30];
+        var sum = 0;
+        for (var idx in arr) {
+            sum += arr[idx];
+        }*/
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

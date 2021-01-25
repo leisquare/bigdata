@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var arr1 = array();
+        var arr2 = array(3);
+        var arr3 = array(273, 2, 'hello');
+        document.write(arr1 + '의 방갯수: ' + arr1.length+ '<br>')
+        document.write(arr2 + '의 방갯수: ' + arr2.length + '<br>')
+        document.write(arr3 + '의 방갯수: ' + arr3.length + '<br>')
+
+        //인자가 0: 빈배열
+        //인자가 1개: 방의 갯수가 인자만큼인 배열
+        //인자가 2개 이상: 인자 자체가 배열
+
+        array(); //-> arguments:[]
+        array(1, 2); // arguments"[,2]
+        function array() { //arguments: 함수 내 매개변수 배열(예약어)
+            var result = [];
+            if (arguments.length == 1) {//인자가 한개일 때 명령어
+                for (var cnt = 1; cnt <= arguments[0]; cnt++) {
+                    result.push('');
+                }
+            } else if (arguments.length >= 2) {//인자가 2개 이상일 때
+                /* for (var cnt = 0; cnt < arguments.length; cnt++) {
+                    result.push(arguments[cnt]);
+                }*/
+                    for (var idx in arguments) {
+                    result.push(arguments[idx]);
+                } 
+                /* arguments.forEach(function (data) {
+                    result.push(data);
+                }); forEach는 내장함수에는 사용할 수 없다. */
+
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

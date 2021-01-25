@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var i = Number(prompt('i값은?', '0'));
+        var j = Number(prompt('j값은?', '0'));
+        document.write('i(' + i + ')의 j(' + j + ')승은 '
+            + pow(i, j)+'<br>')
+        //선언된 매개변수보다 많은 매개변수는 뒷부분 무시
+        document.write('pow(2,3,10,10)=' + pow(2, 3, 10, 10,) + '<br>');
+        //선언된 매개변수보다 적은 매개변수는 :undefined로 할당
+        document.write('pow(2)=' + pow(2) + '<br>');
+        function pow(x, y) {//x의 y승을 리턴하는 함수
+            var result = 1;
+            for (var cnt = 1; cnt <= y; cnt++) {
+                result *= x;
+            }
+            return result;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

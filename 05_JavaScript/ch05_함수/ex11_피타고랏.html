@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        /* A가 만든 부분
+        function square(x) {
+            return x * x;
+        }
+        function pythagoras(width, height) {
+            return Math.sqrt(square(width) + square(height));
+        } 
+        이처럼 쓰여있으면 아래의 함수와 충돌한다.
+        해결하기 위해 아래와 같이 내부 함수로 만든다.*/
+        
+        function pythagoras(width, height) {
+            function square(x) {
+                return x * x;
+            } /*이 내부함수는 밖에서는 호출할 수 없다.
+             또한 특정 함수를 호출할 때 내부함수가 우선순위가 높다.
+             충돌을 막기 위해 내부함수를 많이 사용한다.*/
+            return Math.sqrt(square(width) + square(height));
+        }
+    </script>
+    <script>
+        /* B가 만든 부분: 밑변 높이 빗변을 받아 직각삼각형 여부 확인*/
+        function square(width, height, hypotenuse) {
+            if (width * width + height * height == hypotenuse * hypotenuse) {
+                return true;
+            } else {
+                return false;
+            }
+        }  
+    </script>
+    <script>
+        alert(pythagoras(3, 4));
+        alert(square(3,4,5))
+    </script>
+</head>
+<body>
+
+</body>
+</html>

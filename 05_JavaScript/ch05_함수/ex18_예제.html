@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script> // 자기호출함수, 배열 등을 이용하여 0->1->2로 경고창에 뜨도록...
+
+        for (var i = 0; i< 3; i++) {
+            setTimeout(function () { alert(i); }, 0);
+        }
+
+        //포문 값을 어레이에 넣고
+        //어레이의 값을 순차출력?
+        for (var i = 0; i < 3; i++) {
+            (function (j) {
+                setTimeout(function() { alert(j); }, 0);
+            })(i);
+        }
+        //배열 forEach()함수를 이용하여 수정
+        //바꿀 경고창 순서 0-1-2
+        [0, 1, 2].forEach(function (data, idx) {
+            setTimeout(function () { alert(data); }, 0);
+        });
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
