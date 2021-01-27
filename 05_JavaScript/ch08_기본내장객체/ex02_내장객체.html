@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        //모든 내장객체의 메소드는 프로토타입 안에. 생략하면 안됨
+        Object.prototype.test = function () { //Object 안에 test 메소드를 만들었음. 다른 아이도 호출해 사용 가능하다.
+            alert(this) //아무 말 없으면 toString을 붙여서 뽑아준다.
+        };
+
+        var num = 273; // var num = new Number(273);
+        //이 num은 object로부터 상속해있으므로 test를 사용 가능하다.
+        num.test();
+        var str = 'hello,JS'; //var str = new String('hello, JS'); 이것도 상동
+        str.test();
+
+        var obj = {
+            name: '홍길동', age: 25,
+            toString: function () {
+                return this.name + '은 ' + this.age;
+            }
+        };
+        obj.test();   //obj에는 to string이 없어서 다르게 뽑아줌
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        String.prototype.replaceA = function (oldStr, newStr) {
+            // var s1 = this.split(oldStr);
+            // var s2 = s1.join(newStr);
+            // return s2;
+            return this.split(oldStr).join(newStr);
+        };
+
+        var str = 'abcd@AbCe@abc'; //= var str = new String('abcd@abce@abc'); 완전히 동일한 선언이다.
+        document.write('글씨길이 : ' + str.length + '<br>');
+        document.write('글씨 더하기: '+ str.concat('123') + '<br>');
+        document.write('글씨 추출: ' + str.substring(3, 5)+'<br>');
+        //3번째부터 5번째의 앞까지 추출
+        document.write('글씨 추출: ' + str.substr(3, 5) + '<br>');
+        //3번째부터 5개의 글자 추출
+        document.write('앞부터 일치하는 위치:' + str.indexOf('@') + '<br>');
+        document.write('뒤부터 일치하는 위치:' + str.lastIndexOf('@') + '<br>');
+        document.write("@를 ''로 :" + str.replace('@', '') + '<br>');
+        //replace는 첫번째만 바꿔준다.
+        document.write("@를 ''로 :" + str.replaceAll('@', '') + '<br>');
+        document.write('"  yi "를 space 없애기: ' + "  yi ".trim() + '<br>');
+        document.write("대문자변환: " + str.toUpperCase() + '<br>');
+        document.write("소문자변환: " + str.toLowerCase() + '<br>');
+
+
+        /* var output = 'abcd@abce@abc';
+        var splitOutput = output.split('@');
+        document.write(splitOutput + '분리된 갯수:' + splitOutput.length + '<br>');
+        var result = splitOutput.join(' ');
+        document.write(result); */
+
+
+        /*var hu = "huyuto";
+        var ic = "ichigo"
+        var love = hu.concat('♡') + ic + '<br>';
+        document.write(hu.concat('♡') + ic + '<br>');
+        var mang = '믿음소망사랑'
+        document.write('사랑은' + love.lastIndexOf('♡')+'번 <br>');
+        document.write('믿음소망사랑 그 중 최고는 ' + mang.substr(3, 2) + '<br>');*/
+
+       
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

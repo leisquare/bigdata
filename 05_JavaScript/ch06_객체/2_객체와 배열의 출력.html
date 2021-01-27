@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var arr = [1, 2, 3]; //출력: 일반 fir, for~in문, forEach()
+        for (var idx in arr) {
+            document.write(idx + '번째 : ' + arr[idx] + '<br>');
+        }
+        var obj = { name: '홍길동', age: 32 }; //for in문만 사용가능
+        for (var key in obj) {
+            document.write(key + ':' + obj[key] + '<br>');
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

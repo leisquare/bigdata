@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var arr1 = new Array('hig', 'abc', 'abd');
+        var arr2 = [52, 103, 273, 32, 57];
+        document.write('arr1 정렬전 :' + arr1 + '<br>');
+        arr1.sort(); //정렬: 아스키코드 순으로
+        document.write('arr1 정렬후 :' + arr1 + '<br>');
+        document.write('arr2 정렬전 :' + arr2 + '<br>');
+        arr2.sort(function (left, right) {
+            return left - right; //오름차순 정렬. 내림차순은 반대로
+        }); //정렬: 아스키코드 순으로
+        document.write('arr2 정렬후 :' + arr2 + '<br>');
+        arr2.reverse(); //배열의 요소 순서를 뒤집는다.
+        document.write('arr2 뒤집은 후: '+arr2 +'<br>')
+        var sliceArr2 = arr2.slice(0, 3); //0 인덱스부터 3 인덱스까지 앞에서
+        document.write('arr2 최소값 3개: ' + sliceArr2);
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

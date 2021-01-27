@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<!--작은 그림이 있는 parent-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function openBig() {
+            var child = open('ch04_big.html', '', 'width=500, height=610');
+            if (!child) {
+                alert('팝업차단 해제하세요')
+            }
+        }
+        function closeBig(){
+            child.close();
+        }
+    </script>
+</head>
+<body>
+    <h2>작은 그림이 있는 </h2>
+    <img src="ch09_img/small.jpg" alt="작은 그림" 
+         onmouseover="openBig()"
+         onmouseout="closeBig()"/>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function Student(name, kor, mat) {
+            this.name = name;
+            this.kor = kor;
+            this.mat = mat;
+
+        }
+        Student.prototype.getSum = function () {
+            return this.kor + this.mat;
+        }
+        Student.prototype.getAvg= function () {
+            return this.getSum() / 2;
+        }
+
+        Student.prototype.toString = function () {
+            return this.name + '(' + this.kor + ',' + this.mat + '총점 ' + this.getSum() + '평균' + this.getAvg()+')'
+        }
+
+        var students = [
+            new Student('김', 100, 93),
+            new Student('이', 20, 58),
+            new Student('박', 70, 99),
+            new Student('송', 80, 14),
+            new Student('최', 55, 63)
+        ];
+
+        //원데이터 출력
+        document.write('원데이터: ' + students + '<br>');
+        //내림차순 정렬
+        students.sort(function (left, right) {
+            return right.getSum() - left.getSum();
+        });
+        
+        //정렬된 데이터 출력(총점 기준 내림차순 정렬
+        document.write('총점 기준 내림차순: ' + students + '<br>');
+        students.forEach(function (data, idx) {
+            document.write(idx + ':' + data + '<br>');
+        });
+
+
+        //1등부터 3등까지만 출력
+        document.write('1~3등 <br>');
+        students.slice(0, 3).forEach(function (data,idx) {
+            document.write(idx + 1 + '등' + data + '<br>');
+        });
+
+
+
+        var output = '이름\t총점\t평균\n';
+        for (var i in students) {
+            output += students[i].toString() + '\n';
+        }
+        alert(output);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

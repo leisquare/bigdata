@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function Student(name, kor, eng, mat) {
+            this.name = name;
+            this.kor = kor;
+            this.eng = eng;
+            this.mat = mat;
+        }
+        Student.prototype.getSum = function () { return this.kor + this.eng + this.mat; };
+        Student.prototype.getAvg = function () { return Math.round(this.getSum() / 3 * 10) / 10; };
+        Student.prototype.toString = function () { return this.name + '\t' + this.getSum() + '\t' + this.getAvg(); };
+        var students = [];
+        students.push(new Student('홍길동', 80, 70, 50));
+        students.push(new Student('윤길동', 80, 70, 50));
+        students.push(new Student('김홍동', 100, 70, 50));
+        var output = '이름\t총점\t평균\n';
+        for (var i in students) {
+            output += students[i].toString() + '\n';
+        }
+        alert(output);
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

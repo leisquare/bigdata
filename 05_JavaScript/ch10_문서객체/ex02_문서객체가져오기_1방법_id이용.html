@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        window.onload = function () {
+            var header1 = document.getElementById("header-1");
+            header1.innerHTML = '시간';
+            var header2 = document.getElementById("header-2");
+            header2.innerHTML = new Date().toLocaleString();
+        };
+    </script>
+</head>
+<body>
+    <h1 id="header-1">header-1</h1>
+    <h1 id="header-2">header-2</h1>
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var str = "abc#abcㄱㅏ가";
+        var patternNum = /[0-9]/; //정규표현식으로 나타낸 숫자패턴
+        var patternEng = /[a-zA-Z]/; //정규표현식으로 나타낸 영문패턴
+        var patternKor = /[가-힣ㄱ-ㅎㅏ-ㅣ]/; //정규표현식으로 나타낸 한글패턴
+        var patternSpe = /[~!@#$%^&*()-_=+{}|\[\\\]]/; //특수문자패턴
+
+        var patternNameChk = /[~!@#$%^&*0-9]/;
+
+
+        function chk() {
+            if (patternNameChk.test(frm.name.value)) {
+                alert('특수문자와 숫자 안됨');
+                frm.name.focus();
+                return false;
+            } else if (!frm.name.value) {
+                alert('이름을 입력하세요');
+                frm.name.focus();
+                return false;
+            } else if (!frm.mail.value) {
+                alert("메일을 입력하세요.")
+                frm.mail.focus();
+                return false;
+            } else if (frm.mail.value.indexOf('@') >= frm.mail.value.indexOf('.')) {
+                alert ('올바른 메일 형식으로 입력하세요.')
+                frm.mail.focus();
+                return false;
+            } else if (!frm.pw.value) {
+                alert("비밀번호를 입력하세요.")
+                frm.pw.focus();
+                return false;
+            } else if (frm.pw.value.length<4) {
+                alert("비밀번호는 4글자 이상.")
+                frm.pw.focus();
+                return false; 
+            } else if (patternNum.test(frm.pw.value) == false || patternEng.test(frm.pw.value) == false || patternSpe.test(frm.pw.value) == false) {
+                alert("비밀번호는 영어 숫자 특문 섞어 4글자 이상.")//a3#A
+                frm.pw.focus();
+                return false;
+            }  else if (!frm.pwChk.value) {
+                alert("비밀번호 확인을 입력하세요.")
+                frm.pwChk.focus();
+                return false;
+            } else if (frm.pw.value != frm.pwChk.value) {
+                alert("확인번호가 비밀번호와 일치하지 않습니다.")
+                frm.pw.value = "";
+                frm.pwChk.value = "";
+                frm.pw.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <link href="chk1.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div id="base">
+        <form id="inputform" name="frm" onsubmit="return chk()">
+            <table>
+                <tr>
+                    <th>이름</th>
+                    <td><input type="text" name="name" class="nameBar" placeholder="특수문자 외 숫자 못 와" /> </td>
+                </tr>
+                <tr>
+                    <th>메일</th>
+                    <td><input type="text" name="mail" class="mailBar" placeholder=" 메일형식에 맞추세요" /> </td>
+                </tr>
+                <tr>
+                    <th>비밀번호</th>
+                    <td><input type="password" name="pw" class="pwBar" /> </td>
+                </tr>
+                <tr>
+                    <th>비밀번호 확인</th>
+                    <td><input type="password" name="pwChk" class="pwChkBar" /> </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="회원가입" class="btn"/>
+                        <input type="reset" value="취소" class="btn"/>
+                        <input type="button" value="로그인" class="btn" onclick="chk()" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function Student(name, kor, eng, mat) {
+            this.name = name;  // this는 현재 객체의 속성을 가리킬 때 씀, name은 파라미터로 받은 지역변수
+            this.kor = kor;
+            this.eng = eng;
+            this.mat = mat;
+	    this.sum = kor+eng+mat;
+            this.getSum = function () { return this.kor + this.eng + this.mat; };
+            this.getAvg = function () { return Math.round(this.getSum() / 3*10)/10; };
+            this.toString = function () { return this.name + '\t' + this.getSum() + '\t' + this.getAvg(); };
+        }
+        var student = new Student('윤하린', 100, 96, 98);
+        var students = [];
+        students.push(new Student('홍길동', 80, 70, 50));
+        students.push(new Student('김길동', 80, 70, 50));
+        students.push(new Student('김홍동', 100, 70, 50));
+        var output = '이름\t총점\t평균\n';
+        for (var i in students) {
+            output += students[i].toString() + '\n';
+        }
+        alert(output);
+        console.log ('student는 Student 생성자함수의 인스턴스인지 '+(student instanceof Student));
+        console.log ('student는 Array 생성자함수의 인스턴스인지 ' + (student instanceof Array));
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
