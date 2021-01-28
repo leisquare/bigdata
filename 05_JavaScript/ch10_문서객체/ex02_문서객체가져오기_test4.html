@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        var color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple', 'white', 'black'];
+
+        window.onload = function () {
+            var td = document.querySelectorAll('td');
+            for (var idx = 0; idx < td.length; idx++) {
+                //tds[idx].style.backgroundColor = Color[idx];
+                td[idx].style.cssText = 'background-color:' + color[idx];
+            }
+        };
+
+        function append(idx) {
+           
+            document.body.style.backgroundColor = 'black';
+            var h1 = document.createElement('h1');
+            h1.style.color = color[idx];
+            var text = document.createTextNode('야호');
+            h1.appendChild(text);
+            document.body.appendChild(h1);
+            //document.body.innerHTML += '<h1>야호</h1>';
+            //var h1 = document.querySelector('h1');
+            //h1.style.color = color[idx];
+        }
+        function remove() {
+            var h1 = document.querySelector('h1');
+            document.body.removeChild(h1);
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+    <style>
+        table {
+            width: 600px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        h1{color:red;}
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr onmouseout="remove()">
+            <td onmouseover="append(0)"></td>
+            <td onmouseover="append(1)"></td>
+            <td onmouseover="append(2)"></td>
+            <td onmouseover="append(3)"></td>
+            <td onmouseover="append(4)"></td>
+            <td onmouseover="append(5)"></td>
+            <td onmouseover="append(6)"></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -5,16 +5,44 @@
     <meta charset="utf-8" />
     <title></title>
     <script>
+        var id, header1;
+        var toggle1 = 0, toggle2 = 0;
+
         window.onload = function () {
-            var header1 = document.getElementById("header-1");
+            header1 = document.getElementById("header-1");
             header1.innerHTML = '시간';
             var header2 = document.getElementById("header-2");
-            header2.innerHTML = new Date().toLocaleString();
+            id = setInterval(function () {
+                header2.innerHTML = new Date().toLocaleString();
+            }, 1000);
         };
+        function change(n) {
+            if (n == 1) {
+                if (toggle1 == 0) {
+                    header1.innerHTML = '바꿔';
+                    toggle1 = 1;
+                } else if (toggle1 == 1) {
+                    header1.innerHTML = "header-1";
+                    toggle1 = 0;
+                }
+            } else if (n == 2) {
+                var header2 = document.getElementById("header-2");
+                if (toggle2 == 0) {
+                    header2.innerHTML = '바꿔';
+                    clearInterval(id);
+                    toggle2 = 1;
+                } else if (toggle2 == 1) {
+                    header2.innerHTML = "header-2";
+                    toggle2 = 0;
+                }
+            }
+        }
     </script>
 </head>
 <body>
     <h1 id="header-1">header-1</h1>
     <h1 id="header-2">header-2</h1>
+    <button onclick="change(1)">바꿔1</button>
+    <button onclick="change(2)">바꿔2</button>
 </body>
 </html>

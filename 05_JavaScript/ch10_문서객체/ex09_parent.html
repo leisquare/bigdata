@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap {
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        function childOpen() {
+            var child = open('ex09_child.html', '', width=400, height=300);
+            if (!child) {
+                alert('팝업 차단 해제!');
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <p>
+            아이디<input type="text" name="id" id="ID" />
+            <button onclick="childOpen()">중복확인</button>
+        </p>
+    </div>
+
+
+
+
+</body>
+</html>

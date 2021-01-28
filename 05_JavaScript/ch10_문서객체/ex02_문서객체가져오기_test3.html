@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function append() {
+            //var h1 = document.createElement('h1');
+            //var textNode = document.createTextNode('HEADER');
+            //h1.appendChild(textNode);
+            //document.body.appendChild(h1);
+
+            document.body.innerHTML += '<h1>HEADER</h1>';
+        }
+        function remove() {
+            var h1 = document.querySelectorAll('h1');
+            for (var idx = 0; idx < h1.length; idx++) {
+                document.body.removeChild(h1[idx]);
+                //for (var idx = h1.length - 1; idx >= 0; idx--) {
+               // document.body.removeChild(h1[idx]);
+                //위의 방식이 안먹힐때는 거꾸로도 시도할 것 
+                //div wrap한 경우는 아래처럼.
+                //wrap.removeChild(h1[idx]); 로 입력할 것
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+    <button onclick="remove()"> h1 싹 없애기</button>
+    <button onclick="append()"> h1 하나씩 추가하기</button>
+    <h1>HEADER</h1>
+    <h1>HEADER</h1>
+    <h1>HEADER</h1>
+    <h1>HEADER</h1>
+</body>
+</html>

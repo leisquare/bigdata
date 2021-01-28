@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #wrap{
+            width: 450px;
+            margin: 0 auto;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            //var chkID = opener.document.getElEmentById('ID').value;
+
+
+            openerId = opener.document.getElementById('id');
+            id = document.getElementsByName('name')[0];
+            id.value = openerid.value;
+        };
+
+        function sendData(part) {
+            //var check = document.getElementById('chkID').value;
+            //opener.document.getElementById('ID').value = check;
+            //close();
+
+            openerId.value = id.value;
+            close();
+        }
+    </script>
+
+</head>
+<body>
+    <div id="wrap">
+        <p>
+            ID<input type="text" name="name" />
+            <button>체크</button>
+        </p>
+        <p>
+            <button onclick="confirmOK();">아이디사용</button>
+        </p>
+    </div>
+
+</body>
+</html>

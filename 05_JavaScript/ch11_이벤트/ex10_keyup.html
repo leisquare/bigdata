@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        window.onkeyup = function () {
+            var p = document.getElementsByTagName('p')[0];
+            if (event.keyCode >= 48 && event.keyCode <= 57) {
+                p.innerHTML += '위 키보드 수 : ' + (event.keyCode - 48) + '의 아스키코드'
+                    + event.keyCode + '<br>';
+            } else if (event.keyCode >= 96 && event.keyCode <= 105) {
+                p.innerHTML += '옆 키보드 수 : ' + (event.keyCode - 96) + '의 아스키코드'
+                    + event.keyCode + '<br>';
+            };
+        }
+    </script>
+</head>
+<body>
+    <p></p>
+</body>
+</html>

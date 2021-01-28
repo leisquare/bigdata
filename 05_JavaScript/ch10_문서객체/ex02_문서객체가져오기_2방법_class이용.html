@@ -8,9 +8,11 @@
         window.onload = function () {
             //getElementByClassName 의 return은 배열. 하나만 있어도 배열로 받는다.
             var clock1 = document.getElementsByClassName('clock1');
-            clock1[0].innerHTML = new Date().toLocaleDateString();
+            clock1[0].innerHTML
+                = new Date().toLocaleDateString();
             var clock2 = document.getElementsByClassName("clock2");
-            clock2[0].value = new Date().toLocaleTimeString();
+            clock2[0].value
+                = new Date().toLocaleTimeString();
         };
     </script>
 </head>

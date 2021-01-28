@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        var color = ['red', 'orange', 'yellow', 'green', 'blue', 'navy', 'purple','white'];
+
+        window.onload = function () {
+            var td = document.querySelectorAll('td');
+            for (var idx in td) {
+                //tds[idx].style.backgroundColor = Color[idx];
+                td[idx].style.cssText = 'background-color:' + color[idx];
+            }
+        };
+
+        function backcolorChange(idx) {
+            document.body.style.backgroundColor = color[idx];
+        }
+
+
+    </script>
+
+    <style>
+        table { width : 600px; 
+                height: 100px;
+                margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr onmouseout="backcolorChange(7)">
+            <td onmouseover="backcolorChange(0)"></td>
+            <td onmouseover="backcolorChange(1)"></td>
+            <td onmouseover="backcolorChange(2)"></td>
+            <td onmouseover="backcolorChange(3)"></td>
+            <td onmouseover="backcolorChange(4)"></td>
+            <td onmouseover="backcolorChange(5)"></td>
+            <td onmouseover="backcolorChange(6)"></td>
+        </tr>
+    </table>
+</body>
+</html>
