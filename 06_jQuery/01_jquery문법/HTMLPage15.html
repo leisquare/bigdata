@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style></style>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        //랜덤 값을 1st, 2nd 칸에 입력
+        $(document).ready(function () {
+            $('input[name="1st"]').val(parseInt(Math.random() * 10));
+            $('input[name="2nd"]').val(parseInt(Math.random() * 10));
+            var n1 = Number($('input[name = "1st"]').val());
+            var n2 = Number($('input[name = "2nd"]').val());
+            $('#cal').click(function () {
+                var ans = Number($('input[name="ans"]').val());
+                if (n1 + n2 == ans) {
+                    $('input[name="msg"]').val('정답입니다..')
+                } else if (n1 + n2 != ans) {
+                    $('input[name="msg"]').val('틀렸습니다.')
+                } else if (ans == '') {
+                    $('input[name="msg"]').val('값을 입력하시오.')
+                } else {
+                    $('input[name="msg"]').val('에러!')
+                }
+            });
+            //3칸의 값=1칸 2칸의 계산 값일 때 맞았다
+            //3칸의 값=1칸 2칸의 계산 값일 때 틀렸다
+        });
+
+    </script>
+</head>
+
+<body>
+    <p><input id="1st" type="text" name="1st" size="5" readonly="readonly" />
+    +
+    <input id="2nd" type="text" name="2nd" size="5" readonly="readonly"/>
+    =
+    <input id="ans" type="text" name="ans" size="5" placeholder="답"/></p>
+    <p><button id ="cal" type="submit">채점</button>
+       <button type="reset">다시</button></p>
+    <hr />
+    <div id="msg">틀렸나 맞았나</div>
+</body>
+</html>

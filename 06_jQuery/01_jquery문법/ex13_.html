@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('img').mouseover(function () {
+                var idx = $(this).attr('src').substring(4, 5);
+                $(this).attr('src', 'img/'+idx+'over.jpg');
+                
+                
+            });
+            $('img').mouseout(function () {
+                var idx = $(this).attr('src').substring(4, 5);
+                $(this).attr('src', 'img/' + idx + 'out.jpg');
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <img src="img/0out.jpg" alt="클릭전" />
+    <img src="img/1out.jpg" alt="클릭전" />
+    <img src="img/2out.jpg" alt="클릭전" />
+    <img src="img/3out.jpg" alt="클릭전" />
+    <p class="result"></p>
+</body>
+</html>

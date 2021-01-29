@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        table td{width:100px; height:100px; background-color:#AAFFAA;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $('td').click(function () {
+                var who = $(this).attr('class'); //속성값 가져오기
+                //who = $(this).text(); //지금은 이것도 된다. 텍스트를 같게 설정해둬서
+                $('.result').html('당신은 ' + who + '선택');
+            });
+        });
+    </script>
+</head>
+<body>
+    <table>
+        <tr><td class="1111">11</td><td class="2222">22</td></tr>
+        <tr><td class="3333">33</td><td class="4444">44</td></tr>
+    </table>
+    <p class="result"></p>
+</body>
+</html>
