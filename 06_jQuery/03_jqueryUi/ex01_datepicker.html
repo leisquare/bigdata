@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+</head>
+<body>
+    <!--<p>생년월일<input type="date" name="birth" /> 익스플로러에서는 동작하지 않음. 데이트피커를 쓰면 다른 브라우저에서도 동작한다.</p>-->
+    <p>Date: <input type="text" id="datepicker"></p> <!--제대로 동작하기 위해서는 id를 꼭 맞춰줄 것!-->
+</body>
+</html>

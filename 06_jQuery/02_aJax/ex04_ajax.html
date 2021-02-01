@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                var mid = $('#mid').val();
+                $.ajax({
+                    //url:요청경로
+                    url: 'idConfirm.html',
+                    //type:get/post
+                    type: 'get',
+                    //data: 요청 파라미터 값
+                    data: 'mid=' + mid,
+                    //dataType:요청결과의 타입(html,json,...)
+                    dataType: 'html',
+                    //success: 요청 성공시 수행할 콜백함수
+                    success: function (data) {
+                        $('#result').html(data);
+                    },
+                    error: function (code) {
+                        alert(code.status + code.statusText);
+                    }
+                });
+            }); //콜백함수
+        }); //jquery
+    </script>
+</head>
+<body>
+    <p>
+        아이디 <input type="text" name="mid" id="mid" />
+        <button>중복확인</button>
+    </p>
+    <span id="result"></span>
+</body>
+</html>

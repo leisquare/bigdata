@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function () {
+            $('button').click(function () {
+                //$.post('url') post방식은 url만 넘긴다. get처럼 주소에 넘기는 게 아니기 때문
+                var id = $('#mid').val();
+                $post('idConfirm.html',
+                    { mid: id }, //앞은 속성이름, 뒤는 변수의 속성값. 
+                    function (data,status) {
+                        if (status == 'success') {
+                            $('#result').html(data);
+                        } else {
+                            alert('실패')
+                        }
+                    }
+                ); //post함수
+            }); //콜백함수
+        }); //jquery
+    </script>
+</head>
+<body>
+    <p>
+        아이디 <input type="text" name="mid" id="mid" />
+        <button>중복확인</button>
+    </p>
+    <span id="result"></span>
+</body>
+</html>
