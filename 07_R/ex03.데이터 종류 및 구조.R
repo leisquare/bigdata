@@ -474,7 +474,7 @@ emp$deptno <-as.factor(emp$deptno)
 str(emp)
 
 
-
+class(iris)
 edit(iris)
 str(iris)
 iris$Species<-as.character(iris$Species)
@@ -527,9 +527,82 @@ customers<-c('jin@gmail.com,010-9999-8888,seoul korea',
              'yun@gmail.com,010-1111-8222,pusan korea',
              'ann@gmail.com,010-451-5112,pusan korea')
 strsplit(customers,'[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}')
-#문자열 대체: sub(oldStr,newStr,string)
-            #gsub(oldStr,newStr,string)
-s<-'Curly is the smart one. Curly is funny, too.'
-sub('Curly','Eric',s)
-gsub('Curly','Eric',s)
+
+# 문자열 대체 : sub(oldStr, newStr, string)
+# : gsub(oldStr, newStr, string)
+s <- 'Curly is the smart one. Curly is funny, too.'
+sub('Curly','Eric', s)
+gsub('Curly', 'Eric', s)
 gsub(' ','',s)
+
+# 외적 : outer ; 문자열의 모든 쌍별 조합 만듬.
+a<-c ('aa','bb','cc')
+b<-c('11','22','33')
+outer(a,b,FUN="paste")
+outer(a, b, FUN="paste", sep=' ~ ')
+
+# 날짜
+today = Sys.Date()
+class(today)
+# %Y : 년도4자리 %y : 년도 2자리 %m:월 %d 일
+thatday = as.Date("21-04-30",'%y-%m-%d')
+thatday
+if(today < thatday){
+  cat('today보다 thatday 후')
+}
+
+
+
+
+#실습문제
+
+# 1.
+# 1) iris의 차원 확인
+iris<-dim(iris)
+rm(list=ls())
+dim(iris)
+
+# 1) 컬럼이름 확인
+colnames(iris)
+
+# 1) 구조확인
+str(iris)
+
+# 1) 속성들
+colnames(iris)
+
+# 2) iris의 요약통계 정보
+summary(iris)
+
+# 2) 꽃받침길이(Sepal.Length) 처음 10개
+head(iris$Sepal.Length,10)
+iris[c(1:10),'Sepal.Length']
+iris[c(1:10),'Sepal.Length', drop=FALSE]
+# 3) virginica 종만 추출
+levels(iris$Species)
+virginica<-iris[iris$Species == 'virginica',]
+virginica <- subset(iris,iris$Species =='virginica')
+virginica
+# 3) setosa 추출
+setosa<- iris[iris$Species =='setosa',]
+setosa
+
+
+# 4) 추출한 부분 데이터셋(virginica와 setosa)을 다시 결합해 봅니다.
+rbind(setosa,virginica)
+
+# 2. setosa 종의 꽃 받침(Sepal)의 폭과 길이 부분 데이터 셋을 추출
+subset(iris, subset=(iris$Species == 'setosa'), select = c('Sepal.Length', 'Sepal.Width'))
+
+# 3.
+pay <- matrix(c(12000,26000,18000), ncol=3)
+pay # 1행 3열
+dimnames(pay) <- list(c('시급'),c('A작업','B작업','C작업'))
+pay
+work <- matrix(c(c(5,4,9),c(7,3,2)) , ncol=2)
+dimnames(work)<-list(c('A작업','B작업','C작업'), c('갑','을'))
+work
+salaray_cost <- pay %*% work
+salaray_cost
+rownames(salaray_cost) <- c('급여')
+salaray_cost
