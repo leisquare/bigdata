@@ -45,11 +45,24 @@ rp3<-rep(1:4,each=2)
 
 v3<- seq(1,10,3)
 
-## [문제5 ] 1부터 100으로 구성되는 7개의 중복되지 않는 데이터를 추출하여 count 라는 백터를 만든다. 
+# [문제5 ] 1부터 100으로 구성되는 7개의 중복되지 않는 데이터를 추출하여 count 라는 백터를 만든다. 
+count<- c(sample(1:100, size = 7))
+  #week.korname 이라는 이름으로 “일요일”, “월요일”,…”토요일” 값으로 벡터를 만든다. 
+week.korname<-c('일요일','월요일','화요일','수요일','목요일','금요일','토요일')
+  #다음 형식으로 구성되는 벡터를 생성하여 출력한다.
+  #추출된 값이 – 21, 40, 11, 55, 70, 90, 30 이라면 다음과 같이 출력한다.
+  #일요일 : 21   월요일 : 40   화요일 : 11 ……………..   토요일 : 30
+cat(paste(week.korname,count,sep=' : '))
+  #값이 가장 큰 요일의 명칭을 출력한다.
 
-a<-seq(1,100)
+which.max(count)#count가장 큰 값의 색인
+week.korname[which.max(count)]
 
-sampleBy(data=a,frac=0.7) #그룹별 20퍼센트씩 샘플링하는 방법. 비복원추출
+week.korname[order(-count)[1]]
+  #값이 가장 작은 요일의 명칭을 출력한다.
+week.korname[order(count)[1]]
+  #50보다 큰 값에 해당하는 요일의 명칭을 출력한다.
+week.korname[count>50]
 
 # [문제6]  다음과 같이 값이 구성되는 매트릭스를 정의하여 m1 에 저장한다.
 
@@ -81,6 +94,7 @@ vector3<-matrix(seq(13,18),ncol=3)
 vector4<-matrix(seq(19,24),ncol=3)
 
 a<-array(c(vector1,vector2,vector3,vector4),dim=c(2,3,4))
+#a<-array(c(1:23),c(2,3,4))
   # (1) 2행3열4층의 데이터를 출력한다.
 a[2,3,4]
   # (2) 각 층마다 2행의 데이터를 출력한다
@@ -128,6 +142,8 @@ df3
 mean(df3[,2])
 mean(df3[,3])
 
+apply(df3[,2:3],2,mean)
+mean(df3$가격)
 
 # [문제15] 다음 세 벡터를 이용하여 데이터프레임 df4를 생성하고,
   #name 변수는 문자, gender 변수는 팩터, math 변수는 숫자 데이터의 유형이라는 것을 확인하시오.
@@ -137,6 +153,17 @@ gender <- factor(c('M', 'F', 'M', 'F', 'M'))
 math <- c(85, 76, 99, 88, 40)
 df4<-data.frame(name,gender,math)
 str(df4)
+
+#위에서 만든 데이터프레임에 대해 다음 작업을 수행하시오. 
+#(a) stat 변수를 추가하시오. stat <- c(76, 73, 95, 82, 35)
+df4$stat<-c(76,73,95,82,35)
+#(b) math 변수와 stat 변수의 합을 구하여 score 변수에 저장하시오. 
+df4$score<-df4$math+df4$stat #파생변수
+
+#(c) 논리 연산 인덱싱을 이용하여 score가 150 이상이면 A, 100 이상 150 미만이면 B, 70 이상 100 미만이면 
+#C  등급을 부여하고 grade 변수에 저장하시오.	
+df4$grade<-ifelse(df4$score>=150,'A',ifelse(df4$score>=100,'b','c'))
+
 
 # [문제16] 다음과 같이 값이 구성되는 리스트를 정의하여 L1 에 저장한다.
 L1 <- list(name='scott',sal=3000)
@@ -154,54 +181,60 @@ li[[2]]
 li[[2]]<-c('Alpha', 'B', 'C')
 
 
-
-
-## [문제19] 다음 리스트에서 첫 번째 원소(alpha)의 각 값에 10을 더하여 출력한다.
+# [문제19] 다음 리스트에서 첫 번째 원소(alpha)의 각 값에 10을 더하여 출력한다.
 a<-list(alpha=0:4, beta=sqrt(1:5), gamma=log(1:5))
-aVector<-unlist(a)
-b<-aVector$alpha+10
+a$alpha <-  a$alpha+10
+a
+# a[[1]]+10
 
-# [문제20] 다음 리스트는 math, writing, reading의 중간고사 및 기말고사 점수이다. 
+#### [문제20] 다음 리스트는 math, writing, reading의 중간고사 및 기말고사 점수이다. 
   #전체 평균을 계산하여 출력한다.
 a<- list(math=list(95, 90), writing=list(90, 85), reading=list(85, 80))
 unlist(a)
 mean(unlist(a))
+sapply(scores,mean)
 
-# [문제21] iris 데이터에서 다dma 기본 정보를 조회한다(기본정보조회)
+# [문제21] iris 데이터에서 다음 기본 정보를 조회한다(기본정보조회)
+#타입, 구조, 차원, 변수이름, 기본통계량(평균, 표준편차, 사분위수)
+#타입
+class(iris)
+#구조
+str(iris)
+#차원
+dim(iris)
+#변수명
+ls(iris)
+
+#기본통계량
+summary(iris)
 
 # [문제22] iris 데이터를 정렬한다
+  #Petal.Length를 기준으로 내림차순으로 정렬하세요
 iris[order(-iris$Petal.Length),]
+  #Sepal.Width 를 내림차순 정렬하세요
+sort(iris$Sepal.Width,decreasing=TRUE)
 iris[order(-iris$Sepal.Width),]
+iris[order(-iris$Sepal.Width),'Sepal.Width']
+iris[order(-iris$Sepal.Width),'Sepal.Width',drop=FALSE]
 
 # [문제 23] iris 데이터의 종별 데이터 개수 출력한다
 table(iris$Species)
 
 #[문제 24] 종별 Sepal.Length의 합을 출력한다.
-apply(subset(iris, subset=(iris$Species == 'setosa'),select=1),2,sum)
-apply(subset(iris, subset=(iris$Species == 'virginica'),select=1),2,sum)
-apply(subset(iris, subset=(iris$Species == 'versicolor'),select=1),2,sum)
+install.packages("doBy")
+library("doBy")
+tapply(iris$Sepal.Length, iris$Species, sum)
+summaryBy(Sepal.Length~Species,data=iris,FUN=sum)
 
 # [문제 25] Sepal.Length, Sepal.Width, Petal.Length, Petal.Width의 평균을 출력
 # Apply, lappy, sapply이용
 # 종별 Sepal.Length의 평균 출력
-lapply(iris,FUN=sum)
-
-
-
-# 문 iris 데이터를 lapply와 sapply를 이용하여 sepal,Length~petal.Width까지의 평균을 구하여라.
-
 irisList <- as.list(iris[,1:4])
 irisList
-lapply(irisList,mean)
-sapply(irisList,mean)
+lapply(irisList, mean)
+sapply(irisList, mean)
 
+## [문제 26] 꽃받침의 길이(Sepal.Length)가 가장 긴 꽃의 종은 무엇인가요?
 
-
-#9.2 aggregate : 데이터를 하위 집합으로 분할하고 요약통계 계산
-aggregate(iris[,1:4],by=list(iris[,5]),sum)
-apply(iris$Species,FUN=sum) #열별 합계
-
-# [문제 26] 꽃받침의 길이(Sepal.Length)가 가장 긴 꽃의 종은 무엇인가요?
-
-iris[which.max(iris$Sepal.Length), ]
-
+iris[which.max(iris$Sepal.Length),][5]
+iris[which.max(iris$Sepal.Length),'Species']
