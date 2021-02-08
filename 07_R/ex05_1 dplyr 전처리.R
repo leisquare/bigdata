@@ -219,3 +219,158 @@ mpg %>%
   summarise(tot_mean=mean(totalavg))
   arrange(-totalavg)%>%
   head(5)
+
+  
+#4 데이터 합치기
+  #열 합치기 : cbind, left_join
+  #행 합치기 : rbind, bind_rows
+  #cf.merge
+#4.1 열합치기(가로)
+test1<-data.frame(id=c(1,2,3,4,5),
+                  midterm=c(70,80,90,95,99))
+test2<-data.frame(id=c(1,2,3,4,5),
+                  final=c(90,80,80,60,99),
+                  teacherid=c(1,1,2,3,4))
+teacher<-data.frame(teacherid=c(1,2,3),
+                    teachername=c('kim','park','ryu'))
+cbind(test1,test2) #그대로 붙음
+merge(test1,test2)
+left_join(test1,test2,by='id')
+
+cbind(test2,teacher) #불가능
+left_join(test2,teacher,by='teacherid') #left_join은 없는 데이터는 na 붙여 출력
+merge(test2,teacher,by='teacherid') #merge는 없는 데이터를 제거해버림
+merge(test2,teacher,by='teacherid',all=T) #이렇게하면 전부 나옴. 다소 다르다.
+
+#4.2 행합치기
+group_a<-data.frame(id=c(1,2,3,4,5),
+                    test=c(60,70,80,90,95))
+group_b<-data.frame(id=c(6,7,8,9,10),
+                    test=c(60,70,80,90,95))
+rbind(group_a,group_b) #두 데이터프레임의 변수가 같은 경우
+bind_rows(group_a,group_b)
+
+group_a<-data.frame(id=c(1,2,3,4,5),
+                    test1=c(60,70,80,90,95))
+group_b<-data.frame(id=c(6,7,8,9,10),
+                    test2=c(60,70,80,90,95))
+rbind(group_a,group_b) #두 데이터프레임의 변수가 일부 같지 않은 경우
+bind_rows(group_a,group_b)
+
+merge(group_a,group_b)#merge 수행불가
+merge(group_a,group_b,all=T)
+
+# 5. 데이터 정제하기 - 결측치(NA), 이상치
+boxplot(ggplot2::mpg$hwy)
+#5.1 결측치 정제하기
+df<-data.frame(name=c('kim','yi','you','na','park'),
+               gender=c('m','f',NA,'m','f'),
+               score=c(5,4,3,4,NA),
+               income=c(2000,3000,4000,4500,4600))
+
+is.na(df)
+table(is.na(df))
+table(is.na(df$gender))
+table(is.na(df$score))
+na.omit(df) #r결측치가 하나라도 있으면 그 행 모두 제거. 간편하지만 같은 행 분석에 필요한 열의 정보까지 손상
+
+
+library(dplyr)
+df %>% 
+  filter(!is.na(score)) %>% 
+  summarise(mean_score=mean(score))
+mean(df$score,na.rm=T) #결측치를 제거하고 평균을 냄
+
+tapply(df$score,df$gender, mean, na.rm=T)
+
+#결측치를 대체하기(평균값, 중앙값)
+x<-c(1,1,2,2,3,3,3,4,4,5,5,100)
+mean(x)
+median(x)
+
+exam<-read.csv("inData/exam.csv",header=T)
+table(is.na(exam))
+exam[c(3,8,15),'math']<-NA #인위적으로 math에 결측치 넣기
+exam[1:2,'english']<-NA #인위적으로 english에 결측치 넣기
+
+table(is.na(exam))
+apply(exam[3:5],2,mean,na.rm=T)
+tapply(exam[,3],exam$class,mean)
+
+exam %>% 
+  summarise(math=mean(math,na.rm = T),
+            english=mean(english,na.rm=T),
+            schence=mean(science,na.rm=T))
+
+
+# 결측치들을 중앙값 대체 
+exam$math #결측치 확인
+exam$math<-ifelse(is.na(exam$math),median(exam$math,na.rm=T),exam$math) #중앙값 대체. 이게 더 안전하다.
+exam$math<-ifelse(is.na(exam$math),round(mean(exam$math,na.rm=T)),exam$math) #평균대체
+exam$math #확인
+
+exam$english
+exam$english<-ifelse(is.na(exam$english),median(exam$english,na.rm=T),exam$english)
+
+exam<-read.csv("inData/exam.csv",header=T)
+exam[c(1,3,4),'math']<-NA
+exam[c(1:2),'english']<-NA
+exam[c(1),'science']<-NA
+head(exam)
+
+median<-round(apply(exam[3:5],2,mean,na.rm=T))
+median['math']
+median['english']
+median['science']
+
+#결측치 대체 방법1
+
+exam<-within(exam,{
+  math<-ifelse(is.na(math),median['math'],math)
+  english<-ifelse(is.na(english),median['english'],english)
+  science<-ifelse(is.na(science),median['science'],science)
+})
+table(is.na(exam)) #exam 안에 결측치 갯수 확인
+colSums(is.na(exam)) #변수별 결측치 갯수 확인
+
+#결측치 대체 방법 2(dplyr패키지 이용)
+colSums(is.na(exam))
+median['math']
+median['english']
+median['science']
+exam<-exam %>% 
+  mutate(
+    math=ifelse(is.na(math),median['math'],math),
+    english=ifelse(is.na(english),median['english'],english),
+    science=ifelse(is.na(science),median['science'],science)
+  )
+head(exam.m)
+
+#5-2 이상치 정제
+#(1) 극단적인 이상치(정상범위 기준에서 벗어난 값)
+#논리적인 이상치(ex.성별에 남여가 아닌 값)
+#이상치는 결측치로 대체
+
+outlier<-data.frame(gender=c(1,2,1,3,2),
+                    score=c(90,95,100,99,101))
+table(outlier$gender)
+#gender 1은 남, 2는 여, 3은 이상치 처리
+outlier$gender<-ifelse((outlier$gender!=1 & outlier$gender!=2),NA,outlier$gender)
+outlier
+#score가 100 초과하는 경우 이상치 처리
+outlier$score<-ifelse((outlier$score>100),NA,outlier$score)
+
+# (2) 정상범위 기준으로 많이 벗어난 이상치: 상하위 0.3% 또는 평균+3*표준편차
+mpg<-as.data.frame(ggplot2::mpg)
+mpg$hwy
+mean(mpg$hwy)+3*sd(mpg$hwy)
+mean(mpg$hwy)-3*sd(mpg$hwy)
+
+result<-boxplot(mpg$hwy)$stats #박스플롯의 통계치.
+
+result[1];result[5];
+mpg$hwy<-ifelse(mpg$hwy>result[5]|mpg$hwy<result[1],NA,mpg$hwy)
+table(is.na(mpg$hwy))
+
+
+
