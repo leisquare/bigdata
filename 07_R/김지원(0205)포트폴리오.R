@@ -1,4 +1,6 @@
-
+library(ggplot2)
+library(gapminder)
+library(dplyr)
 
 ### 연습문제 1
 #datasets::cars데이터 셋을 이용하여 속도에 대한 제동거리의 산점도와 적합도(신뢰구간\그래프)를 나타내시오
@@ -111,12 +113,21 @@ economics %>%
   #filter(substr(country, 1, 5) %in% c('Korea','China','Japan')) %>% 
   ggplot(aes(x=date,y=psavert))  +
   #geom_point(aes(col=country),pch=16)+
-  geom_line(mapping=aes(x=date,y=psavert,color='red'))+
+  geom_line(mapping=aes(x=date,y=psavert,color='red',size=8))+
+  geom_smooth(col='#FF3333')+
   labs(title="연습문제 10",
        subtitle="개인저축률 시계열그래프 ")+
   theme(legend.position ="none")
 
+###연습문제 11. x=date, y=psavert 시게열그래프+추세선(적합도선) x=date,y=unemploy
 
+economics[1:5,c('date','psavert','unemploy')]
 
+ggplot(data=economics)+
+  geom_line(aes(x=date,y=psavert),col='#FF0000',size=2)+
+  geom_smooth(aes(x=date,y=psavert),col='pink')+
+  geom_line(aes(x=date,y=unemploy*0.001),col='blue')+
+  geom_smooth(aes(x=date,y=unemploy*0.001))+
+  scale_y_continuous(sec.axis=sec.axis(~.*1000,name='unemploy'))
 
-
+sec.axis
