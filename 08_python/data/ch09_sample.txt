@@ -1,0 +1,6 @@
+1规过. Hello
+World
+2规过.python is easy.
+R is easy
+Java is easy
+3规过.python is easy.R is easyJava is easy
