@@ -1,0 +1,12 @@
+[
+	{
+		"location": "서울",
+		"time": 12,
+		"temperature": 3
+	},
+	{
+		"location": "인천",
+		"time": 12,
+		"temperature": 1
+	}
+]
