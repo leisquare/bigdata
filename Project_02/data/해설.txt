@@ -1,0 +1,18 @@
+1_약효분류별다빈도현황(본체).xls : 117번코드, 119번코드 약물의 처방 증가세
+1_국민관심질병성별입원외래별현황(진료년월).xls : 2020년 8월까지 성별별 우울증 외래입원환자 확인(우울증 전체)
+1_4단질병성별입원외래별현황(진료년월).xls : 19년 1월부터 20년 8월까지 성별 입원외래별 현황(코드 F313)
+1_4단질병성별입원외래별현황(진료년월)(1).xls : 코드 F315
+
+
+
+코로나블루에 해당하는 질병코드는.. F313? 
+
+
+지출목적별_소비자물가지수_품목_포함__2015100__20210412154851.csv : 국가통계포털.  https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1J17001&vw_cd=MT_ZTITLE&list_id=P2_6&seqNo=&lang_mode=ko&language=kor&obj_var_id=&itm_id=&conn_path=MT_ZTITLE
+
+
+최근_1년간_간편식_HMR__품목별_구입경험_및_구입변화_즉석섭취식품__20210412155104.csv : 국가통계포털.
+https://kosis.kr/statHtml/statHtml.do?orgId=114&tblId=DT_114053_054&vw_cd=MT_ZTITLE&list_id=D2_114053_001_003&seqNo=&lang_mode=ko&language=kor&obj_var_id=&itm_id=&conn_path=MT_ZTITLE
+
+주관적인_정신건강_수준_20210412155804.csv : 
+2017-2020 

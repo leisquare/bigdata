@@ -1,0 +1,35 @@
+pip install django
+1. 새로운 장고 프로젝트 생성
+	(cmd창에서만 생성가능) django-admin startproject ch01
+2. 새로운 앱 생성
+	python manage.py startapp hello (hello라는 앱과 폴더가 만들어짐)
+3. 파이참으로 해당 프로젝트를 열어 소스 수정.
+프로젝트/settings.py의 INSTALLED_APPS에 앱등록
+
+python manage.py runserver
+나온 주소로 들어갈 것(http://127.0.0.1:8000/)
+
+4. 앱이름/view 작성
+5. 프로젝트/urls.py에 include로 적용
+6. 앱이름/urls.py에 적용
+
+
+
+superuser yi/leisquare5
+
+
+
+python manage.py makemigrations 
+python manage.py migrate
+python manage.py shell 
+
+from students.models import Student
+
+
+qs = Student(s_name='홍', s_major='computer', s_age=21, s_grade=2, s_gender='M')
+
+
+qs = Student(s_name='정', s_major='economy',s_age=23,s_grade=3,s_gender='F')
+
+
+qs = Student.objects.order_by('s_age')

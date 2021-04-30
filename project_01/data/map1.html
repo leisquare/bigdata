@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a1228e24d988404b82063d4bf308216d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a1228e24d988404b82063d4bf308216d" ></div>
+        
+</body>
+<script>    
+    
+            var map_a1228e24d988404b82063d4bf308216d = L.map(
+                "map_a1228e24d988404b82063d4bf308216d",
+                {
+                    center: [37.48463981428571, 126.50538350476191],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1539d3fe46a24cd29d68ffe514daa543 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            var circle_marker_85b308d412644232b308e596c7be9e26 = L.circleMarker(
+                [37.4951398, 126.50677979999999],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_85b308d412644232b308e596c7be9e26.bindTooltip(
+                `<div>
+                     인천하늘고등학교 : 인천광역시 중구 영종대로277번길 117 . 인천하늘고등학교 (운서동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a7df9319b85347c6a3b96079c2229163 = L.circleMarker(
+                [37.496092600000004, 126.49153909999998],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a7df9319b85347c6a3b96079c2229163.bindTooltip(
+                `<div>
+                     인천영종고등학교 : 인천광역시 중구 영종대로278번길 34 (운서동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76698a69d3c14a52bab627dc8c37b4e8 = L.circleMarker(
+                [37.497448, 126.4860371],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_76698a69d3c14a52bab627dc8c37b4e8.bindTooltip(
+                `<div>
+                     인천공항고등학교 : 인천광역시 중구 신도시북로 20 (운서동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e27919c2a3d4acbbb4ebf917880e785 = L.circleMarker(
+                [37.4913264, 126.5074054],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4e27919c2a3d4acbbb4ebf917880e785.bindTooltip(
+                `<div>
+                     인천과학고등학교 : 인천광역시 중구 영종대로277번길 74-37 (운서동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_90b2c841ca26410886328130c39f1e8a = L.circleMarker(
+                [37.490108899999996, 126.509171],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_90b2c841ca26410886328130c39f1e8a.bindTooltip(
+                `<div>
+                     인천국제고등학교 : 인천광역시 중구 영종대로277번길 74-40 (운서동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6bce41e6dd940c8a77b1ef89ba3d195 = L.circleMarker(
+                [37.490004799999994, 126.53092290000001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a6bce41e6dd940c8a77b1ef89ba3d195.bindTooltip(
+                `<div>
+                     영종국제물류고등학교 : 인천광역시 중구 운남서로10번길 1 (운남동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c72bba0fffb64edeb86ffba8a20e65e7 = L.circleMarker(
+                [37.4973401, 126.484353],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_c72bba0fffb64edeb86ffba8a20e65e7.bindTooltip(
+                `<div>
+                     인천공항중학교 : 인천광역시 중구 영종대로27번길 49 . 인천공항중학교 (운서동. 인천공항중학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e056c7928c94c98a22c7cc7015a1c1e = L.circleMarker(
+                [37.483973999999996, 126.524072],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_6e056c7928c94c98a22c7cc7015a1c1e.bindTooltip(
+                `<div>
+                     영종중학교 : 인천광역시 중구 남디로 92 (운남동. 영종중학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_17289e81ac5f47a3af022004ff758ddc = L.circleMarker(
+                [37.44808, 126.412499],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_17289e81ac5f47a3af022004ff758ddc.bindTooltip(
+                `<div>
+                     용유중학교 : 인천광역시 중구 남북로87번길 4 (남북동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6a0674e9ca4f4cde91b466b71d103454 = L.circleMarker(
+                [37.4956798, 126.5699476],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_6a0674e9ca4f4cde91b466b71d103454.bindTooltip(
+                `<div>
+                     인천중산중학교 : 인천광역시 중구 두미포로 189 (중산동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1439e2a1ac90454494e4d53571aad901 = L.circleMarker(
+                [37.4918963, 126.48590859999999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_1439e2a1ac90454494e4d53571aad901.bindTooltip(
+                `<div>
+                     인천공항초등학교 : 인천광역시 중구 신도시남로 43 (운서동. 공항초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f6951972deb46d081894106814be50c = L.circleMarker(
+                [37.5107002, 126.52309890000001],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_7f6951972deb46d081894106814be50c.bindTooltip(
+                `<div>
+                     인천영종초등학교금산분교장 : 인천광역시 중구 백운로414번길 63-50 (운북동. 금산초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4eff2a7fdfa4b7aa9714c47410308d9 = L.circleMarker(
+                [37.491641200000004, 126.5331139],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a4eff2a7fdfa4b7aa9714c47410308d9.bindTooltip(
+                `<div>
+                     인천별빛초등학교 : 인천광역시 중구 은하수로 402 (운남동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b560ca316e8489a88777056eb2d4163 = L.circleMarker(
+                [37.3874761, 126.42877920000001],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4b560ca316e8489a88777056eb2d4163.bindTooltip(
+                `<div>
+                     인천용유초등학교무의분교장 : 인천광역시 중구 대무의로 302-17 (무의동. 용유초등학교무의분교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e5362dd4ce494cdba12a2bf66fc2ff97 = L.circleMarker(
+                [37.4969641, 126.5551105],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_e5362dd4ce494cdba12a2bf66fc2ff97.bindTooltip(
+                `<div>
+                     인천영종초등학교 : 인천광역시 중구 하늘달빛로 133 . 인천영종초등학교 (중산동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_724ebf07dae24156ac9e5d899b791de2 = L.circleMarker(
+                [37.448206, 126.41238919999999],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_724ebf07dae24156ac9e5d899b791de2.bindTooltip(
+                `<div>
+                     인천용유초등학교 : 인천광역시 중구 남북로87번길 4 (남북동. 용유초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ce794a644b6f4918a3e942651d5eea2c = L.circleMarker(
+                [37.4834812, 126.5118785],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_ce794a644b6f4918a3e942651d5eea2c.bindTooltip(
+                `<div>
+                     인천운서초등학교 : 인천광역시 중구 운서2로 57 (운서동.인천운서초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5094e0a31c4f4b0cbb39a5504e6b7a1a = L.circleMarker(
+                [37.4980021, 126.5580866],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_5094e0a31c4f4b0cbb39a5504e6b7a1a.bindTooltip(
+                `<div>
+                     인천하늘초등학교 : 인천광역시 중구 은하수로 294 (중산동. 영종하늘초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_060abfa480484ec8873d27d1a6fe290d = L.circleMarker(
+                [37.4986455, 126.486325],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_060abfa480484ec8873d27d1a6fe290d.bindTooltip(
+                `<div>
+                     인천삼목초등학교 : 인천광역시 중구 신도시북로 42 (운서동. 인천삼목초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d59d695028a44c569739fa2627f0e676 = L.circleMarker(
+                [37.4901751, 126.5299877],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_d59d695028a44c569739fa2627f0e676.bindTooltip(
+                `<div>
+                     인천운남초등학교 : 인천광역시 중구 운남서로 38 (운남동. 운남초등학교)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bcafae77cc2140729460ec8e84975532 = L.circleMarker(
+                [37.4950539, 126.5656486],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "black", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_bcafae77cc2140729460ec8e84975532.bindTooltip(
+                `<div>
+                     인천중산초등학교 : 인천광역시 중구 두미포로 100 . 인천중산초등학교 (중산동)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f1c83584ee354f3e8aadd544017d0e6e = L.circleMarker(
+                [37.5009958491028, 126.552609392614],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_f1c83584ee354f3e8aadd544017d0e6e.bindTooltip(
+                `<div>
+                     효성어린이집 : 인천광역시 중구 백운로 34
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b9f33b81b5d4ac18edc065b02d3de8c = L.circleMarker(
+                [37.4856468153161, 126.555901931078],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_6b9f33b81b5d4ac18edc065b02d3de8c.bindTooltip(
+                `<div>
+                     라라어린이집 : 인천광역시 중구 하늘달빛로 95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_871e043afbe3496780777e2efd5156bd = L.circleMarker(
+                [37.4858200851309, 126.55459829951799],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_871e043afbe3496780777e2efd5156bd.bindTooltip(
+                `<div>
+                     에코비어린이집 : 인천광역시 중구 하늘달빛로 113
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a984ec010abd45a3ae9760fa8de4af3b = L.circleMarker(
+                [37.47801796193939, 126.51326793242599],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a984ec010abd45a3ae9760fa8de4af3b.bindTooltip(
+                `<div>
+                     이편한숲쟁이어린이집 : 인천광역시 중구 숲쟁이로 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7028d7420a85495b8c4004b824dcefec = L.circleMarker(
+                [37.4906457736603, 126.553555461802],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_7028d7420a85495b8c4004b824dcefec.bindTooltip(
+                `<div>
+                     영종수자인어린이집 : 인천광역시 중구 은하수로 377
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1717526d417d48b9b6437a36cbf36bb7 = L.circleMarker(
+                [37.4945054258006, 126.53626991065501],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_1717526d417d48b9b6437a36cbf36bb7.bindTooltip(
+                `<div>
+                     구립하늘어린이집 : 인천광역시 중구 운중로 13-35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_da2f169637e54d2ab14c9f5bbd75aeb4 = L.circleMarker(
+                [37.4878669035755, 126.531345148677],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_da2f169637e54d2ab14c9f5bbd75aeb4.bindTooltip(
+                `<div>
+                     영종자이어린이집 : 인천광역시 중구 운남서로 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_491fa3561abb41da9f20841d232b3e0a = L.circleMarker(
+                [37.505816896518205, 126.519943756702],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_491fa3561abb41da9f20841d232b3e0a.bindTooltip(
+                `<div>
+                     금산어린이집 : 인천광역시 중구 백운로351번길 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_384ff6e65b8f4785a5cf11ef92dde07a = L.circleMarker(
+                [37.4953332795367, 126.53400339367701],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_384ff6e65b8f4785a5cf11ef92dde07a.bindTooltip(
+                `<div>
+                     하람어린이집 : 인천광역시 중구 운남로 197
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85aef8f54f7c4bb898be92a528a9481e = L.circleMarker(
+                [37.498087371339295, 126.55275600901301],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_85aef8f54f7c4bb898be92a528a9481e.bindTooltip(
+                `<div>
+                     새하늘어린이집 : 인천광역시 중구 운중로 191
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_676b876b624646599881588be8ad639c = L.circleMarker(
+                [37.4843239552324, 126.551619546536],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_676b876b624646599881588be8ad639c.bindTooltip(
+                `<div>
+                     구립중산어린이집 : 인천광역시 중구 은하수로 465
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_79cf615b879248c59c71ea52d5c9c150 = L.circleMarker(
+                [37.49414852582, 126.531470913522],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_79cf615b879248c59c71ea52d5c9c150.bindTooltip(
+                `<div>
+                     구립운남어린이집 : 인천광역시 중구 운남서로 100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41024c6296f84861b8de5f8ee1fb4202 = L.circleMarker(
+                [37.4855100363628, 126.555768881712],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_41024c6296f84861b8de5f8ee1fb4202.bindTooltip(
+                `<div>
+                     온누리어린이집 : 인천광역시 중구 하늘달빛로 95
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ab9bb05220f44d5882ba4feff55d4327 = L.circleMarker(
+                [37.4946304207902, 126.570757626538],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_ab9bb05220f44d5882ba4feff55d4327.bindTooltip(
+                `<div>
+                     행복누리어린이집 : 인천광역시 중구 두미포로 140
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b9a61bbcdf44095a13be0ee273e3cb0 = L.circleMarker(
+                [37.5007779400797, 126.562803171558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4b9a61bbcdf44095a13be0ee273e3cb0.bindTooltip(
+                `<div>
+                     영종한신더휴어린이집 : 인천광역시 중구 은하수로 229
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c186321918d43df81273246afadf35a = L.circleMarker(
+                [37.4897764935176, 126.562799163878],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4c186321918d43df81273246afadf35a.bindTooltip(
+                `<div>
+                     키즈앤맘하우스 : 인천광역시 중구 하늘별빛로 75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76231b8ebb16461b88a72de08fdb5715 = L.circleMarker(
+                [37.4921242892716, 126.5587851073],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_76231b8ebb16461b88a72de08fdb5715.bindTooltip(
+                `<div>
+                     구립스카이시티자이어린이집 : 인천광역시 중구 하늘별빛로 111
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7b4abbd5d80408e888c16609c812a0e = L.circleMarker(
+                [37.494209029458, 126.566468540373],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_e7b4abbd5d80408e888c16609c812a0e.bindTooltip(
+                `<div>
+                     구립오션하임어린이집 : 인천광역시 중구 두미포로 112
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_fe770173f9c643b08c26d7ae2f9e64c2 = L.circleMarker(
+                [37.48473410416079, 126.558633123723],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_fe770173f9c643b08c26d7ae2f9e64c2.bindTooltip(
+                `<div>
+                     예쁜어린이집 : 인천광역시 중구 하늘달빛로 65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d262c88f31514346bbaf95d58f90fae7 = L.circleMarker(
+                [37.4894257995452, 126.54958745594601],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_d262c88f31514346bbaf95d58f90fae7.bindTooltip(
+                `<div>
+                     구립푸르지오자이은하수어린이집 : 인천광역시 중구 은하수로 412
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0f7825aefc641a49ffba7d1ffcbcf78 = L.circleMarker(
+                [37.4925732205519, 126.552760655756],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_f0f7825aefc641a49ffba7d1ffcbcf78.bindTooltip(
+                `<div>
+                     스위첸어린이집 : 인천광역시 중구 은하수로 380
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1ca707ed407c42de9ad942248c86302a = L.circleMarker(
+                [37.4931880210392, 126.55956753553801],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_1ca707ed407c42de9ad942248c86302a.bindTooltip(
+                `<div>
+                     파크드림어린이집 : 인천광역시 중구 하늘별빛로 112
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cdb56ca5125443359165d626ff448d7f = L.circleMarker(
+                [37.4906370727737, 126.56317844115101],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_cdb56ca5125443359165d626ff448d7f.bindTooltip(
+                `<div>
+                     셀파우등생영종하늘도시한라비발디교실 : 인천광역시 중구 하늘별빛로 86
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c39e595395e7476fa232981292934e31 = L.circleMarker(
+                [37.4950121444941, 126.482183984092],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_c39e595395e7476fa232981292934e31.bindTooltip(
+                `<div>
+                     한울어린이집 : 인천광역시 중구 영종대로27번길 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_927fde41853844e68f168cc457e915a0 = L.circleMarker(
+                [37.489689065328, 126.489358847507],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_927fde41853844e68f168cc457e915a0.bindTooltip(
+                `<div>
+                     흰돌어린이집 : 인천광역시 중구 신도시남로 92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b6b28d03183d4ba0a836080c125695e6 = L.circleMarker(
+                [37.4931721668301, 126.486246850598],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_b6b28d03183d4ba0a836080c125695e6.bindTooltip(
+                `<div>
+                     조은어린이집 : 인천광역시 중구 흰바위로 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4b5ca07a8b5a460fa3b1bd199e356c80 = L.circleMarker(
+                [37.495938479333795, 126.483454385588],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4b5ca07a8b5a460fa3b1bd199e356c80.bindTooltip(
+                `<div>
+                     꿈이자라는어린이집 : 인천광역시 중구 영종대로27번길 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5fe02ea5663d4a32a8ea626444d2efb7 = L.circleMarker(
+                [37.493533318222205, 126.487008504012],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_5fe02ea5663d4a32a8ea626444d2efb7.bindTooltip(
+                `<div>
+                     그네와시소어린이집 : 인천광역시 중구 흰바위로 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_074b412caab9463da765107d7e78c69c = L.circleMarker(
+                [37.50109428979211, 126.487127346882],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_074b412caab9463da765107d7e78c69c.bindTooltip(
+                `<div>
+                     상아어린이집 : 인천광역시 중구 신도시북로43번길 83
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0a17cfad83ae49c3b1f97ab23726e2ee = L.circleMarker(
+                [37.4931721668301, 126.486246850598],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_0a17cfad83ae49c3b1f97ab23726e2ee.bindTooltip(
+                `<div>
+                     아이사랑어린이집 : 인천광역시 중구 흰바위로 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d272650ee9354c03b8c6f49092c65cb4 = L.circleMarker(
+                [37.4995532810983, 126.48921666314699],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_d272650ee9354c03b8c6f49092c65cb4.bindTooltip(
+                `<div>
+                     사랑어린이집 : 인천광역시 중구 신도시북로88번길 11-3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8f0e0073c8fc48c9aaa42cf7c71e1d7b = L.circleMarker(
+                [37.484652669514205, 126.499274459768],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_8f0e0073c8fc48c9aaa42cf7c71e1d7b.bindTooltip(
+                `<div>
+                     구립운서어린이집 : 인천광역시 중구 영종대로278번길 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c44a8f74bdfc4597a21e62c1f8df5958 = L.circleMarker(
+                [37.4944097291895, 126.48579216018899],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_c44a8f74bdfc4597a21e62c1f8df5958.bindTooltip(
+                `<div>
+                     산들어린이집 : 인천광역시 중구 신도시남로 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3f97c8b6a05e4acbbd188d9993344011 = L.circleMarker(
+                [37.489007699519895, 126.488920278467],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_3f97c8b6a05e4acbbd188d9993344011.bindTooltip(
+                `<div>
+                     공항세관바다어린이집 : 인천광역시 중구 신도시남로 92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00daaf3f8f6649c38920ef30a953b39f = L.circleMarker(
+                [37.489007699519895, 126.488920278467],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_00daaf3f8f6649c38920ef30a953b39f.bindTooltip(
+                `<div>
+                     공항세관하늘어린이집 : 인천광역시 중구 신도시남로 92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad852d45a69a433d87fe4cbf54347b38 = L.circleMarker(
+                [37.4927130615365, 126.486278733536],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_ad852d45a69a433d87fe4cbf54347b38.bindTooltip(
+                `<div>
+                     아이사랑놀이방 : 인천광역시 중구 흰바위로 13
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10d8293a17ba4b699b125fe4cc9e5866 = L.circleMarker(
+                [37.493533318222205, 126.487008504012],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_10d8293a17ba4b699b125fe4cc9e5866.bindTooltip(
+                `<div>
+                     아이사랑놀이방 : 인천광역시 중구 흰바위로 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5e3371d1cc17430f92febab2f8c57b8d = L.circleMarker(
+                [37.4879319466939, 126.50279322264299],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_5e3371d1cc17430f92febab2f8c57b8d.bindTooltip(
+                `<div>
+                     구립영종국제어린이집 : 인천광역시 중구 영종대로252번길 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4e982f0970e14da69a4125b59f2c4866 = L.circleMarker(
+                [37.4410184085135, 126.46434781294799],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_4e982f0970e14da69a4125b59f2c4866.bindTooltip(
+                `<div>
+                     인천공항어린이집 : 인천광역시 중구 공항로424번길 87
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_36a922187d344323a0aeff16df212d00 = L.circleMarker(
+                [37.440375362878, 126.46132126949101],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_36a922187d344323a0aeff16df212d00.bindTooltip(
+                `<div>
+                     공항꿈나무어린이집 : 인천광역시 중구 공항로424번길 47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_eb8079b2afd54c49bfb6febdf244b3df = L.circleMarker(
+                [37.496734214812705, 126.482974644301],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_eb8079b2afd54c49bfb6febdf244b3df.bindTooltip(
+                `<div>
+                     동심어린이집 : 인천광역시 중구 영종대로27번길 38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_86930576f6584ddbbd6c654f8abb08c3 = L.circleMarker(
+                [37.4908112677783, 126.48622665843],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_86930576f6584ddbbd6c654f8abb08c3.bindTooltip(
+                `<div>
+                     포도나무어린이집 : 인천광역시 중구 흰바위로 22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cddc5103a3864125b72ec98b421c819c = L.circleMarker(
+                [37.4903857303831, 126.48606563467399],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_cddc5103a3864125b72ec98b421c819c.bindTooltip(
+                `<div>
+                     파란나라어린이집 : 인천광역시 중구 흰바위로 22
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a911a1a40a63497bbcc8d27d4d4c8758 = L.circleMarker(
+                [37.4975725141288, 126.483002917997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a911a1a40a63497bbcc8d27d4d4c8758.bindTooltip(
+                `<div>
+                     햇살어린이집 : 인천광역시 중구 영종대로27번길 41
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47b7fe63c9984589af9a4ce346692bdd = L.circleMarker(
+                [37.4931721668301, 126.486246850598],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_47b7fe63c9984589af9a4ce346692bdd.bindTooltip(
+                `<div>
+                     아이사랑어린이집 : 인천광역시 중구 흰바위로 15
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_248a01de4fa34f41ace3ded87b43c366 = L.circleMarker(
+                [37.4950121444941, 126.482183984092],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_248a01de4fa34f41ace3ded87b43c366.bindTooltip(
+                `<div>
+                     구립동심어린이집 : 인천광역시 중구 영종대로27번길 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a67eec77eab24b5da4619a2d744144e7 = L.circleMarker(
+                [37.4921514079483, 126.488856937644],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_a67eec77eab24b5da4619a2d744144e7.bindTooltip(
+                `<div>
+                     흰돌어린이집 : 인천광역시 중구 흰바위로 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3b3ab4f0508241ef97d0b2e42cd0f6c3 = L.circleMarker(
+                [37.440375362878, 126.46132126949101],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_3b3ab4f0508241ef97d0b2e42cd0f6c3.bindTooltip(
+                `<div>
+                     공항꿈나무제2어린이집 : 인천광역시 중구 공항로424번길 47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47269a4c7d4345e5b1390b0b12d63656 = L.circleMarker(
+                [37.500833003037705, 126.484316655236],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_47269a4c7d4345e5b1390b0b12d63656.bindTooltip(
+                `<div>
+                     조은어린이집 : 인천광역시 중구 신도시북로43번길 34
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5b047a8f7eac4a4aa68d6dbeccb31d68 = L.circleMarker(
+                [37.4950121444941, 126.482183984092],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1, "stroke": true, "weight": 3}
+            ).addTo(map_a1228e24d988404b82063d4bf308216d);
+        
+    
+            circle_marker_5b047a8f7eac4a4aa68d6dbeccb31d68.bindTooltip(
+                `<div>
+                     꼬꼬마어린이집 : 인천광역시 중구 영종대로27번길 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
